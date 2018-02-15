@@ -1,0 +1,43 @@
+# CMake generation dependency list for this directory.
+D:/Kontra/Core/CMakeLists.txt
+D:/Kontra/Build/CMakeFiles/3.10.2/CMakeSystem.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake
+D:/Kontra/Build/CMakeFiles/3.10.2/CMakeCCompiler.cmake
+D:/Kontra/Build/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Platform/Windows-MSVC.cmake
+D:/Kontra/Build/CMakeFiles/3.10.2/CMakeRCCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CheckCXXSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CheckIncludeFiles.cmake
+D:/Kontra/Core/cmake/macros/ConfigureScripts.cmake
+D:/Kontra/Core/cmake/options.cmake
+D:/Kontra/Core/cmake/macros/ConfigureBaseTargets.cmake
+D:/Kontra/Core/cmake/macros/CheckPlatform.cmake
+D:/Kontra/Core/cmake/platform/win/settings.cmake
+D:/Kontra/Core/cmake/compiler/msvc/settings.cmake
+D:/Kontra/Core/cmake/macros/GroupSources.cmake
+D:/Kontra/Core/cmake/macros/AutoCollect.cmake
+D:/Kontra/Core/cmake/macros/FindPCHSupport.cmake
+D:/Kontra/Core/dep/cotire/CMake/cotire.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/ProcessorCount.cmake
+D:/Kontra/Core/cmake/macros/FindMySQL.cmake
+D:/Kontra/Core/cmake/macros/FindGit.cmake
+D:/Kontra/Core/cmake/macros/EnsureVersion.cmake
+D:/Kontra/Core/cmake/genrev.cmake
+D:/Kontra/Core/cmake/showoptions.cmake

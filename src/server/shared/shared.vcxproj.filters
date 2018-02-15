@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Kontra\Core\src\server\shared\DataStores\DBCDatabaseLoader.cpp">
+      <Filter>DataStores</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\shared\DataStores\DBCStore.cpp">
+      <Filter>DataStores</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\shared\Packets\ByteBuffer.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\shared\Realm\Realm.cpp">
+      <Filter>Realm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\shared\Realm\RealmList.cpp">
+      <Filter>Realm</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\Memory.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\DataStores\DBCDatabaseLoader.h">
+      <Filter>DataStores</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\DataStores\DBCStorageIterator.h">
+      <Filter>DataStores</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\DataStores\DBCStore.h">
+      <Filter>DataStores</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\Dynamic\FactoryHolder.h">
+      <Filter>Dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\Dynamic\LinkedList.h">
+      <Filter>Dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\Dynamic\ObjectRegistry.h">
+      <Filter>Dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\Dynamic\TypeList.h">
+      <Filter>Dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\Dynamic\LinkedReference\RefManager.h">
+      <Filter>Dynamic\LinkedReference</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\Dynamic\LinkedReference\Reference.h">
+      <Filter>Dynamic\LinkedReference</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\Networking\AsyncAcceptor.h">
+      <Filter>Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\Networking\NetworkThread.h">
+      <Filter>Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\Networking\Socket.h">
+      <Filter>Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\Networking\SocketMgr.h">
+      <Filter>Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\Packets\ByteBuffer.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\Realm\Realm.h">
+      <Filter>Realm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\shared\Realm\RealmList.h">
+      <Filter>Realm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Kontra\Core\src\server\shared\CMakeLists.txt" />
+    <CustomBuild Include="D:\Kontra\Build\CMakeFiles\7a2bfe10b1ed38694275d781c4f08f6c\shared_CXX_prefix.hxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B5B2270A-F6AB-3AF2-8611-DE695E306A11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStores">
+      <UniqueIdentifier>{C33813BB-951E-3BB9-A8AD-D00635B9E2D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamic">
+      <UniqueIdentifier>{7616E3B2-A352-3C87-BEF4-047343ECFC63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Networking">
+      <UniqueIdentifier>{E7FC55CC-6433-34F1-BCC1-0D42360C9E72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packets">
+      <UniqueIdentifier>{1D2D4587-B20E-33B1-B833-AE947D5E5B92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Realm">
+      <UniqueIdentifier>{D344DB74-EE26-3D55-BF9B-C86A41FA6F33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamic\LinkedReference">
+      <UniqueIdentifier>{640193DF-2D6B-35D1-8934-7CA7D4CF70BB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

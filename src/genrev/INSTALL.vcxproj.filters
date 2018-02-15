@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Kontra\Build\CMakeFiles\c21c0ae2c34110a71d42af8896e3828b\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B5B2270A-F6AB-3AF2-8611-DE695E306A11}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

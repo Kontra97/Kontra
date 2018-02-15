@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2E386E11-B5F2-35D8-966F-18C7BB735672}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>worldserver</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">worldserver.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">worldserver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">worldserver.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">worldserver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">worldserver.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">worldserver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">worldserver.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">worldserver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\worldserver;D:\Kontra\Core\src\server\worldserver\CommandLine;D:\Kontra\Core\src\server\worldserver\RemoteAccess;D:\Kontra\Core\src\server\worldserver\TCSoap;D:\Kontra\Build\src\server\worldserver;D:\Kontra\Core\src\server\scripts;D:\Kontra\Core\src\server\game;D:\Kontra\Core\src\server\game\AI;D:\Kontra\Core\src\server\game\AI\CoreAI;D:\Kontra\Core\src\server\game\AI\PlayerAI;D:\Kontra\Core\src\server\game\AI\ScriptedAI;D:\Kontra\Core\src\server\game\AI\SmartScripts;D:\Kontra\Core\src\server\game\Accounts;D:\Kontra\Core\src\server\game\Achievements;D:\Kontra\Core\src\server\game\Addons;D:\Kontra\Core\src\server\game\AuctionHouse;D:\Kontra\Core\src\server\game\AuctionHouseBot;D:\Kontra\Core\src\server\game\Battlefield;D:\Kontra\Core\src\server\game\Battlefield\Zones;D:\Kontra\Core\src\server\game\Battlegrounds;D:\Kontra\Core\src\server\game\Battlegrounds\Zones;D:\Kontra\Core\src\server\game\Cache;D:\Kontra\Core\src\server\game\Calendar;D:\Kontra\Core\src\server\game\Chat;D:\Kontra\Core\src\server\game\Chat\Channels;D:\Kontra\Core\src\server\game\Combat;D:\Kontra\Core\src\server\game\Conditions;D:\Kontra\Core\src\server\game\DataStores;D:\Kontra\Core\src\server\game\DungeonFinding;D:\Kontra\Core\src\server\game\Entities;D:\Kontra\Core\src\server\game\Entities\Corpse;D:\Kontra\Core\src\server\game\Entities\Creature;D:\Kontra\Core\src\server\game\Entities\DynamicObject;D:\Kontra\Core\src\server\game\Entities\GameObject;D:\Kontra\Core\src\server\game\Entities\Item;D:\Kontra\Core\src\server\game\Entities\Item\Container;D:\Kontra\Core\src\server\game\Entities\Object;D:\Kontra\Core\src\server\game\Entities\Object\Updates;D:\Kontra\Core\src\server\game\Entities\Pet;D:\Kontra\Core\src\server\game\Entities\Player;D:\Kontra\Core\src\server\game\Entities\Totem;D:\Kontra\Core\src\server\game\Entities\Transport;D:\Kontra\Core\src\server\game\Entities\Unit;D:\Kontra\Core\src\server\game\Entities\Vehicle;D:\Kontra\Core\src\server\game\Events;D:\Kontra\Core\src\server\game\Globals;D:\Kontra\Core\src\server\game\Grids;D:\Kontra\Core\src\server\game\Grids\Cells;D:\Kontra\Core\src\server\game\Grids\Dynamic;D:\Kontra\Core\src\server\game\Grids\Notifiers;D:\Kontra\Core\src\server\game\Groups;D:\Kontra\Core\src\server\game\Guilds;D:\Kontra\Core\src\server\game\Handlers;D:\Kontra\Core\src\server\game\Instances;D:\Kontra\Core\src\server\game\Loot;D:\Kontra\Core\src\server\game\Mails;D:\Kontra\Core\src\server\game\Maps;D:\Kontra\Core\src\server\game\Miscellaneous;D:\Kontra\Core\src\server\game\Motd;D:\Kontra\Core\src\server\game\Movement;D:\Kontra\Core\src\server\game\Movement\MovementGenerators;D:\Kontra\Core\src\server\game\Movement\Spline;D:\Kontra\Core\src\server\game\Movement\Waypoints;D:\Kontra\Core\src\server\game\OutdoorPvP;D:\Kontra\Core\src\server\game\Petitions;D:\Kontra\Core\src\server\game\Pools;D:\Kontra\Core\src\server\game\Quests;D:\Kontra\Core\src\server\game\Reputation;D:\Kontra\Core\src\server\game\Scripting;D:\Kontra\Core\src\server\game\Server;D:\Kontra\Core\src\server\game\Server\Packets;D:\Kontra\Core\src\server\game\Server\Protocol;D:\Kontra\Core\src\server\game\Skills;D:\Kontra\Core\src\server\game\Spells;D:\Kontra\Core\src\server\game\Spells\Auras;D:\Kontra\Core\src\server\game\Storages;D:\Kontra\Core\src\server\game\Texts;D:\Kontra\Core\src\server\game\Tickets;D:\Kontra\Core\src\server\game\Time;D:\Kontra\Core\src\server\game\Tools;D:\Kontra\Core\src\server\game\Warden;D:\Kontra\Core\src\server\game\Warden\Modules;D:\Kontra\Core\src\server\game\Weather;D:\Kontra\Core\src\server\game\World;D:\Kontra\Core\src\server\shared;D:\Kontra\Core\src\server\shared\DataStores;D:\Kontra\Core\src\server\shared\Dynamic;D:\Kontra\Core\src\server\shared\Dynamic\LinkedReference;D:\Kontra\Core\src\server\shared\Networking;D:\Kontra\Core\src\server\shared\Packets;D:\Kontra\Core\src\server\shared\Realm;D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;D:\Kontra\Core\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_BUILD_DIRECTIVE="$(ConfigurationName)";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\worldserver;D:\Kontra\Core\src\server\worldserver\CommandLine;D:\Kontra\Core\src\server\worldserver\RemoteAccess;D:\Kontra\Core\src\server\worldserver\TCSoap;D:\Kontra\Build\src\server\worldserver;D:\Kontra\Core\src\server\scripts;D:\Kontra\Core\src\server\game;D:\Kontra\Core\src\server\game\AI;D:\Kontra\Core\src\server\game\AI\CoreAI;D:\Kontra\Core\src\server\game\AI\PlayerAI;D:\Kontra\Core\src\server\game\AI\ScriptedAI;D:\Kontra\Core\src\server\game\AI\SmartScripts;D:\Kontra\Core\src\server\game\Accounts;D:\Kontra\Core\src\server\game\Achievements;D:\Kontra\Core\src\server\game\Addons;D:\Kontra\Core\src\server\game\AuctionHouse;D:\Kontra\Core\src\server\game\AuctionHouseBot;D:\Kontra\Core\src\server\game\Battlefield;D:\Kontra\Core\src\server\game\Battlefield\Zones;D:\Kontra\Core\src\server\game\Battlegrounds;D:\Kontra\Core\src\server\game\Battlegrounds\Zones;D:\Kontra\Core\src\server\game\Cache;D:\Kontra\Core\src\server\game\Calendar;D:\Kontra\Core\src\server\game\Chat;D:\Kontra\Core\src\server\game\Chat\Channels;D:\Kontra\Core\src\server\game\Combat;D:\Kontra\Core\src\server\game\Conditions;D:\Kontra\Core\src\server\game\DataStores;D:\Kontra\Core\src\server\game\DungeonFinding;D:\Kontra\Core\src\server\game\Entities;D:\Kontra\Core\src\server\game\Entities\Corpse;D:\Kontra\Core\src\server\game\Entities\Creature;D:\Kontra\Core\src\server\game\Entities\DynamicObject;D:\Kontra\Core\src\server\game\Entities\GameObject;D:\Kontra\Core\src\server\game\Entities\Item;D:\Kontra\Core\src\server\game\Entities\Item\Container;D:\Kontra\Core\src\server\game\Entities\Object;D:\Kontra\Core\src\server\game\Entities\Object\Updates;D:\Kontra\Core\src\server\game\Entities\Pet;D:\Kontra\Core\src\server\game\Entities\Player;D:\Kontra\Core\src\server\game\Entities\Totem;D:\Kontra\Core\src\server\game\Entities\Transport;D:\Kontra\Core\src\server\game\Entities\Unit;D:\Kontra\Core\src\server\game\Entities\Vehicle;D:\Kontra\Core\src\server\game\Events;D:\Kontra\Core\src\server\game\Globals;D:\Kontra\Core\src\server\game\Grids;D:\Kontra\Core\src\server\game\Grids\Cells;D:\Kontra\Core\src\server\game\Grids\Dynamic;D:\Kontra\Core\src\server\game\Grids\Notifiers;D:\Kontra\Core\src\server\game\Groups;D:\Kontra\Core\src\server\game\Guilds;D:\Kontra\Core\src\server\game\Handlers;D:\Kontra\Core\src\server\game\Instances;D:\Kontra\Core\src\server\game\Loot;D:\Kontra\Core\src\server\game\Mails;D:\Kontra\Core\src\server\game\Maps;D:\Kontra\Core\src\server\game\Miscellaneous;D:\Kontra\Core\src\server\game\Motd;D:\Kontra\Core\src\server\game\Movement;D:\Kontra\Core\src\server\game\Movement\MovementGenerators;D:\Kontra\Core\src\server\game\Movement\Spline;D:\Kontra\Core\src\server\game\Movement\Waypoints;D:\Kontra\Core\src\server\game\OutdoorPvP;D:\Kontra\Core\src\server\game\Petitions;D:\Kontra\Core\src\server\game\Pools;D:\Kontra\Core\src\server\game\Quests;D:\Kontra\Core\src\server\game\Reputation;D:\Kontra\Core\src\server\game\Scripting;D:\Kontra\Core\src\server\game\Server;D:\Kontra\Core\src\server\game\Server\Packets;D:\Kontra\Core\src\server\game\Server\Protocol;D:\Kontra\Core\src\server\game\Skills;D:\Kontra\Core\src\server\game\Spells;D:\Kontra\Core\src\server\game\Spells\Auras;D:\Kontra\Core\src\server\game\Storages;D:\Kontra\Core\src\server\game\Texts;D:\Kontra\Core\src\server\game\Tickets;D:\Kontra\Core\src\server\game\Time;D:\Kontra\Core\src\server\game\Tools;D:\Kontra\Core\src\server\game\Warden;D:\Kontra\Core\src\server\game\Warden\Modules;D:\Kontra\Core\src\server\game\Weather;D:\Kontra\Core\src\server\game\World;D:\Kontra\Core\src\server\shared;D:\Kontra\Core\src\server\shared\DataStores;D:\Kontra\Core\src\server\shared\Dynamic;D:\Kontra\Core\src\server\shared\Dynamic\LinkedReference;D:\Kontra\Core\src\server\shared\Networking;D:\Kontra\Core\src\server\shared\Packets;D:\Kontra\Core\src\server\shared\Realm;D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;D:\Kontra\Core\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\worldserver;D:\Kontra\Core\src\server\worldserver\CommandLine;D:\Kontra\Core\src\server\worldserver\RemoteAccess;D:\Kontra\Core\src\server\worldserver\TCSoap;D:\Kontra\Build\src\server\worldserver;D:\Kontra\Core\src\server\scripts;D:\Kontra\Core\src\server\game;D:\Kontra\Core\src\server\game\AI;D:\Kontra\Core\src\server\game\AI\CoreAI;D:\Kontra\Core\src\server\game\AI\PlayerAI;D:\Kontra\Core\src\server\game\AI\ScriptedAI;D:\Kontra\Core\src\server\game\AI\SmartScripts;D:\Kontra\Core\src\server\game\Accounts;D:\Kontra\Core\src\server\game\Achievements;D:\Kontra\Core\src\server\game\Addons;D:\Kontra\Core\src\server\game\AuctionHouse;D:\Kontra\Core\src\server\game\AuctionHouseBot;D:\Kontra\Core\src\server\game\Battlefield;D:\Kontra\Core\src\server\game\Battlefield\Zones;D:\Kontra\Core\src\server\game\Battlegrounds;D:\Kontra\Core\src\server\game\Battlegrounds\Zones;D:\Kontra\Core\src\server\game\Cache;D:\Kontra\Core\src\server\game\Calendar;D:\Kontra\Core\src\server\game\Chat;D:\Kontra\Core\src\server\game\Chat\Channels;D:\Kontra\Core\src\server\game\Combat;D:\Kontra\Core\src\server\game\Conditions;D:\Kontra\Core\src\server\game\DataStores;D:\Kontra\Core\src\server\game\DungeonFinding;D:\Kontra\Core\src\server\game\Entities;D:\Kontra\Core\src\server\game\Entities\Corpse;D:\Kontra\Core\src\server\game\Entities\Creature;D:\Kontra\Core\src\server\game\Entities\DynamicObject;D:\Kontra\Core\src\server\game\Entities\GameObject;D:\Kontra\Core\src\server\game\Entities\Item;D:\Kontra\Core\src\server\game\Entities\Item\Container;D:\Kontra\Core\src\server\game\Entities\Object;D:\Kontra\Core\src\server\game\Entities\Object\Updates;D:\Kontra\Core\src\server\game\Entities\Pet;D:\Kontra\Core\src\server\game\Entities\Player;D:\Kontra\Core\src\server\game\Entities\Totem;D:\Kontra\Core\src\server\game\Entities\Transport;D:\Kontra\Core\src\server\game\Entities\Unit;D:\Kontra\Core\src\server\game\Entities\Vehicle;D:\Kontra\Core\src\server\game\Events;D:\Kontra\Core\src\server\game\Globals;D:\Kontra\Core\src\server\game\Grids;D:\Kontra\Core\src\server\game\Grids\Cells;D:\Kontra\Core\src\server\game\Grids\Dynamic;D:\Kontra\Core\src\server\game\Grids\Notifiers;D:\Kontra\Core\src\server\game\Groups;D:\Kontra\Core\src\server\game\Guilds;D:\Kontra\Core\src\server\game\Handlers;D:\Kontra\Core\src\server\game\Instances;D:\Kontra\Core\src\server\game\Loot;D:\Kontra\Core\src\server\game\Mails;D:\Kontra\Core\src\server\game\Maps;D:\Kontra\Core\src\server\game\Miscellaneous;D:\Kontra\Core\src\server\game\Motd;D:\Kontra\Core\src\server\game\Movement;D:\Kontra\Core\src\server\game\Movement\MovementGenerators;D:\Kontra\Core\src\server\game\Movement\Spline;D:\Kontra\Core\src\server\game\Movement\Waypoints;D:\Kontra\Core\src\server\game\OutdoorPvP;D:\Kontra\Core\src\server\game\Petitions;D:\Kontra\Core\src\server\game\Pools;D:\Kontra\Core\src\server\game\Quests;D:\Kontra\Core\src\server\game\Reputation;D:\Kontra\Core\src\server\game\Scripting;D:\Kontra\Core\src\server\game\Server;D:\Kontra\Core\src\server\game\Server\Packets;D:\Kontra\Core\src\server\game\Server\Protocol;D:\Kontra\Core\src\server\game\Skills;D:\Kontra\Core\src\server\game\Spells;D:\Kontra\Core\src\server\game\Spells\Auras;D:\Kontra\Core\src\server\game\Storages;D:\Kontra\Core\src\server\game\Texts;D:\Kontra\Core\src\server\game\Tickets;D:\Kontra\Core\src\server\game\Time;D:\Kontra\Core\src\server\game\Tools;D:\Kontra\Core\src\server\game\Warden;D:\Kontra\Core\src\server\game\Warden\Modules;D:\Kontra\Core\src\server\game\Weather;D:\Kontra\Core\src\server\game\World;D:\Kontra\Core\src\server\shared;D:\Kontra\Core\src\server\shared\DataStores;D:\Kontra\Core\src\server\shared\Dynamic;D:\Kontra\Core\src\server\shared\Dynamic\LinkedReference;D:\Kontra\Core\src\server\shared\Networking;D:\Kontra\Core\src\server\shared\Packets;D:\Kontra\Core\src\server\shared\Realm;D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;D:\Kontra\Core\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Kontra/Core/src/server/worldserver/worldserver.conf.dist D:/Kontra/Build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\scripts\Debug\scripts.lib;..\game\Debug\game.lib;..\..\..\dep\gsoap\Debug\gsoap.lib;..\shared\Debug\shared.lib;..\database\Debug\database.lib;..\..\common\Debug\common.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_system-vc141-mt-gd-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_filesystem-vc141-mt-gd-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_thread-vc141-mt-gd-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_program_options-vc141-mt-gd-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_iostreams-vc141-mt-gd-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_regex-vc141-mt-gd-1_65_1.lib;..\..\..\dep\fmt\Debug\fmt.lib;..\..\..\dep\g3dlite\Debug\g3dlib.lib;C:\OpenSSL-Win64\lib\VC\libeay32MD.lib;C:\OpenSSL-Win64\lib\VC\ssleay32MDd.lib;C:\OpenSSL-Win64\lib\VC\libeay32MDd.lib;C:\Program Files\MySQL\MySQL Server 5.5\lib\libmysql.lib;..\..\..\dep\recastnavigation\Detour\Debug\Detour.lib;..\..\..\dep\zlib\Debug\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Kontra/Build/src/server/worldserver/Debug/worldserver.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Kontra/Build/bin/Debug/worldserver.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\worldserver;D:\Kontra\Core\src\server\worldserver\CommandLine;D:\Kontra\Core\src\server\worldserver\RemoteAccess;D:\Kontra\Core\src\server\worldserver\TCSoap;D:\Kontra\Build\src\server\worldserver;D:\Kontra\Core\src\server\scripts;D:\Kontra\Core\src\server\game;D:\Kontra\Core\src\server\game\AI;D:\Kontra\Core\src\server\game\AI\CoreAI;D:\Kontra\Core\src\server\game\AI\PlayerAI;D:\Kontra\Core\src\server\game\AI\ScriptedAI;D:\Kontra\Core\src\server\game\AI\SmartScripts;D:\Kontra\Core\src\server\game\Accounts;D:\Kontra\Core\src\server\game\Achievements;D:\Kontra\Core\src\server\game\Addons;D:\Kontra\Core\src\server\game\AuctionHouse;D:\Kontra\Core\src\server\game\AuctionHouseBot;D:\Kontra\Core\src\server\game\Battlefield;D:\Kontra\Core\src\server\game\Battlefield\Zones;D:\Kontra\Core\src\server\game\Battlegrounds;D:\Kontra\Core\src\server\game\Battlegrounds\Zones;D:\Kontra\Core\src\server\game\Cache;D:\Kontra\Core\src\server\game\Calendar;D:\Kontra\Core\src\server\game\Chat;D:\Kontra\Core\src\server\game\Chat\Channels;D:\Kontra\Core\src\server\game\Combat;D:\Kontra\Core\src\server\game\Conditions;D:\Kontra\Core\src\server\game\DataStores;D:\Kontra\Core\src\server\game\DungeonFinding;D:\Kontra\Core\src\server\game\Entities;D:\Kontra\Core\src\server\game\Entities\Corpse;D:\Kontra\Core\src\server\game\Entities\Creature;D:\Kontra\Core\src\server\game\Entities\DynamicObject;D:\Kontra\Core\src\server\game\Entities\GameObject;D:\Kontra\Core\src\server\game\Entities\Item;D:\Kontra\Core\src\server\game\Entities\Item\Container;D:\Kontra\Core\src\server\game\Entities\Object;D:\Kontra\Core\src\server\game\Entities\Object\Updates;D:\Kontra\Core\src\server\game\Entities\Pet;D:\Kontra\Core\src\server\game\Entities\Player;D:\Kontra\Core\src\server\game\Entities\Totem;D:\Kontra\Core\src\server\game\Entities\Transport;D:\Kontra\Core\src\server\game\Entities\Unit;D:\Kontra\Core\src\server\game\Entities\Vehicle;D:\Kontra\Core\src\server\game\Events;D:\Kontra\Core\src\server\game\Globals;D:\Kontra\Core\src\server\game\Grids;D:\Kontra\Core\src\server\game\Grids\Cells;D:\Kontra\Core\src\server\game\Grids\Dynamic;D:\Kontra\Core\src\server\game\Grids\Notifiers;D:\Kontra\Core\src\server\game\Groups;D:\Kontra\Core\src\server\game\Guilds;D:\Kontra\Core\src\server\game\Handlers;D:\Kontra\Core\src\server\game\Instances;D:\Kontra\Core\src\server\game\Loot;D:\Kontra\Core\src\server\game\Mails;D:\Kontra\Core\src\server\game\Maps;D:\Kontra\Core\src\server\game\Miscellaneous;D:\Kontra\Core\src\server\game\Motd;D:\Kontra\Core\src\server\game\Movement;D:\Kontra\Core\src\server\game\Movement\MovementGenerators;D:\Kontra\Core\src\server\game\Movement\Spline;D:\Kontra\Core\src\server\game\Movement\Waypoints;D:\Kontra\Core\src\server\game\OutdoorPvP;D:\Kontra\Core\src\server\game\Petitions;D:\Kontra\Core\src\server\game\Pools;D:\Kontra\Core\src\server\game\Quests;D:\Kontra\Core\src\server\game\Reputation;D:\Kontra\Core\src\server\game\Scripting;D:\Kontra\Core\src\server\game\Server;D:\Kontra\Core\src\server\game\Server\Packets;D:\Kontra\Core\src\server\game\Server\Protocol;D:\Kontra\Core\src\server\game\Skills;D:\Kontra\Core\src\server\game\Spells;D:\Kontra\Core\src\server\game\Spells\Auras;D:\Kontra\Core\src\server\game\Storages;D:\Kontra\Core\src\server\game\Texts;D:\Kontra\Core\src\server\game\Tickets;D:\Kontra\Core\src\server\game\Time;D:\Kontra\Core\src\server\game\Tools;D:\Kontra\Core\src\server\game\Warden;D:\Kontra\Core\src\server\game\Warden\Modules;D:\Kontra\Core\src\server\game\Weather;D:\Kontra\Core\src\server\game\World;D:\Kontra\Core\src\server\shared;D:\Kontra\Core\src\server\shared\DataStores;D:\Kontra\Core\src\server\shared\Dynamic;D:\Kontra\Core\src\server\shared\Dynamic\LinkedReference;D:\Kontra\Core\src\server\shared\Networking;D:\Kontra\Core\src\server\shared\Packets;D:\Kontra\Core\src\server\shared\Realm;D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;D:\Kontra\Core\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_BUILD_DIRECTIVE="$(ConfigurationName)";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\worldserver;D:\Kontra\Core\src\server\worldserver\CommandLine;D:\Kontra\Core\src\server\worldserver\RemoteAccess;D:\Kontra\Core\src\server\worldserver\TCSoap;D:\Kontra\Build\src\server\worldserver;D:\Kontra\Core\src\server\scripts;D:\Kontra\Core\src\server\game;D:\Kontra\Core\src\server\game\AI;D:\Kontra\Core\src\server\game\AI\CoreAI;D:\Kontra\Core\src\server\game\AI\PlayerAI;D:\Kontra\Core\src\server\game\AI\ScriptedAI;D:\Kontra\Core\src\server\game\AI\SmartScripts;D:\Kontra\Core\src\server\game\Accounts;D:\Kontra\Core\src\server\game\Achievements;D:\Kontra\Core\src\server\game\Addons;D:\Kontra\Core\src\server\game\AuctionHouse;D:\Kontra\Core\src\server\game\AuctionHouseBot;D:\Kontra\Core\src\server\game\Battlefield;D:\Kontra\Core\src\server\game\Battlefield\Zones;D:\Kontra\Core\src\server\game\Battlegrounds;D:\Kontra\Core\src\server\game\Battlegrounds\Zones;D:\Kontra\Core\src\server\game\Cache;D:\Kontra\Core\src\server\game\Calendar;D:\Kontra\Core\src\server\game\Chat;D:\Kontra\Core\src\server\game\Chat\Channels;D:\Kontra\Core\src\server\game\Combat;D:\Kontra\Core\src\server\game\Conditions;D:\Kontra\Core\src\server\game\DataStores;D:\Kontra\Core\src\server\game\DungeonFinding;D:\Kontra\Core\src\server\game\Entities;D:\Kontra\Core\src\server\game\Entities\Corpse;D:\Kontra\Core\src\server\game\Entities\Creature;D:\Kontra\Core\src\server\game\Entities\DynamicObject;D:\Kontra\Core\src\server\game\Entities\GameObject;D:\Kontra\Core\src\server\game\Entities\Item;D:\Kontra\Core\src\server\game\Entities\Item\Container;D:\Kontra\Core\src\server\game\Entities\Object;D:\Kontra\Core\src\server\game\Entities\Object\Updates;D:\Kontra\Core\src\server\game\Entities\Pet;D:\Kontra\Core\src\server\game\Entities\Player;D:\Kontra\Core\src\server\game\Entities\Totem;D:\Kontra\Core\src\server\game\Entities\Transport;D:\Kontra\Core\src\server\game\Entities\Unit;D:\Kontra\Core\src\server\game\Entities\Vehicle;D:\Kontra\Core\src\server\game\Events;D:\Kontra\Core\src\server\game\Globals;D:\Kontra\Core\src\server\game\Grids;D:\Kontra\Core\src\server\game\Grids\Cells;D:\Kontra\Core\src\server\game\Grids\Dynamic;D:\Kontra\Core\src\server\game\Grids\Notifiers;D:\Kontra\Core\src\server\game\Groups;D:\Kontra\Core\src\server\game\Guilds;D:\Kontra\Core\src\server\game\Handlers;D:\Kontra\Core\src\server\game\Instances;D:\Kontra\Core\src\server\game\Loot;D:\Kontra\Core\src\server\game\Mails;D:\Kontra\Core\src\server\game\Maps;D:\Kontra\Core\src\server\game\Miscellaneous;D:\Kontra\Core\src\server\game\Motd;D:\Kontra\Core\src\server\game\Movement;D:\Kontra\Core\src\server\game\Movement\MovementGenerators;D:\Kontra\Core\src\server\game\Movement\Spline;D:\Kontra\Core\src\server\game\Movement\Waypoints;D:\Kontra\Core\src\server\game\OutdoorPvP;D:\Kontra\Core\src\server\game\Petitions;D:\Kontra\Core\src\server\game\Pools;D:\Kontra\Core\src\server\game\Quests;D:\Kontra\Core\src\server\game\Reputation;D:\Kontra\Core\src\server\game\Scripting;D:\Kontra\Core\src\server\game\Server;D:\Kontra\Core\src\server\game\Server\Packets;D:\Kontra\Core\src\server\game\Server\Protocol;D:\Kontra\Core\src\server\game\Skills;D:\Kontra\Core\src\server\game\Spells;D:\Kontra\Core\src\server\game\Spells\Auras;D:\Kontra\Core\src\server\game\Storages;D:\Kontra\Core\src\server\game\Texts;D:\Kontra\Core\src\server\game\Tickets;D:\Kontra\Core\src\server\game\Time;D:\Kontra\Core\src\server\game\Tools;D:\Kontra\Core\src\server\game\Warden;D:\Kontra\Core\src\server\game\Warden\Modules;D:\Kontra\Core\src\server\game\Weather;D:\Kontra\Core\src\server\game\World;D:\Kontra\Core\src\server\shared;D:\Kontra\Core\src\server\shared\DataStores;D:\Kontra\Core\src\server\shared\Dynamic;D:\Kontra\Core\src\server\shared\Dynamic\LinkedReference;D:\Kontra\Core\src\server\shared\Networking;D:\Kontra\Core\src\server\shared\Packets;D:\Kontra\Core\src\server\shared\Realm;D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;D:\Kontra\Core\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\worldserver;D:\Kontra\Core\src\server\worldserver\CommandLine;D:\Kontra\Core\src\server\worldserver\RemoteAccess;D:\Kontra\Core\src\server\worldserver\TCSoap;D:\Kontra\Build\src\server\worldserver;D:\Kontra\Core\src\server\scripts;D:\Kontra\Core\src\server\game;D:\Kontra\Core\src\server\game\AI;D:\Kontra\Core\src\server\game\AI\CoreAI;D:\Kontra\Core\src\server\game\AI\PlayerAI;D:\Kontra\Core\src\server\game\AI\ScriptedAI;D:\Kontra\Core\src\server\game\AI\SmartScripts;D:\Kontra\Core\src\server\game\Accounts;D:\Kontra\Core\src\server\game\Achievements;D:\Kontra\Core\src\server\game\Addons;D:\Kontra\Core\src\server\game\AuctionHouse;D:\Kontra\Core\src\server\game\AuctionHouseBot;D:\Kontra\Core\src\server\game\Battlefield;D:\Kontra\Core\src\server\game\Battlefield\Zones;D:\Kontra\Core\src\server\game\Battlegrounds;D:\Kontra\Core\src\server\game\Battlegrounds\Zones;D:\Kontra\Core\src\server\game\Cache;D:\Kontra\Core\src\server\game\Calendar;D:\Kontra\Core\src\server\game\Chat;D:\Kontra\Core\src\server\game\Chat\Channels;D:\Kontra\Core\src\server\game\Combat;D:\Kontra\Core\src\server\game\Conditions;D:\Kontra\Core\src\server\game\DataStores;D:\Kontra\Core\src\server\game\DungeonFinding;D:\Kontra\Core\src\server\game\Entities;D:\Kontra\Core\src\server\game\Entities\Corpse;D:\Kontra\Core\src\server\game\Entities\Creature;D:\Kontra\Core\src\server\game\Entities\DynamicObject;D:\Kontra\Core\src\server\game\Entities\GameObject;D:\Kontra\Core\src\server\game\Entities\Item;D:\Kontra\Core\src\server\game\Entities\Item\Container;D:\Kontra\Core\src\server\game\Entities\Object;D:\Kontra\Core\src\server\game\Entities\Object\Updates;D:\Kontra\Core\src\server\game\Entities\Pet;D:\Kontra\Core\src\server\game\Entities\Player;D:\Kontra\Core\src\server\game\Entities\Totem;D:\Kontra\Core\src\server\game\Entities\Transport;D:\Kontra\Core\src\server\game\Entities\Unit;D:\Kontra\Core\src\server\game\Entities\Vehicle;D:\Kontra\Core\src\server\game\Events;D:\Kontra\Core\src\server\game\Globals;D:\Kontra\Core\src\server\game\Grids;D:\Kontra\Core\src\server\game\Grids\Cells;D:\Kontra\Core\src\server\game\Grids\Dynamic;D:\Kontra\Core\src\server\game\Grids\Notifiers;D:\Kontra\Core\src\server\game\Groups;D:\Kontra\Core\src\server\game\Guilds;D:\Kontra\Core\src\server\game\Handlers;D:\Kontra\Core\src\server\game\Instances;D:\Kontra\Core\src\server\game\Loot;D:\Kontra\Core\src\server\game\Mails;D:\Kontra\Core\src\server\game\Maps;D:\Kontra\Core\src\server\game\Miscellaneous;D:\Kontra\Core\src\server\game\Motd;D:\Kontra\Core\src\server\game\Movement;D:\Kontra\Core\src\server\game\Movement\MovementGenerators;D:\Kontra\Core\src\server\game\Movement\Spline;D:\Kontra\Core\src\server\game\Movement\Waypoints;D:\Kontra\Core\src\server\game\OutdoorPvP;D:\Kontra\Core\src\server\game\Petitions;D:\Kontra\Core\src\server\game\Pools;D:\Kontra\Core\src\server\game\Quests;D:\Kontra\Core\src\server\game\Reputation;D:\Kontra\Core\src\server\game\Scripting;D:\Kontra\Core\src\server\game\Server;D:\Kontra\Core\src\server\game\Server\Packets;D:\Kontra\Core\src\server\game\Server\Protocol;D:\Kontra\Core\src\server\game\Skills;D:\Kontra\Core\src\server\game\Spells;D:\Kontra\Core\src\server\game\Spells\Auras;D:\Kontra\Core\src\server\game\Storages;D:\Kontra\Core\src\server\game\Texts;D:\Kontra\Core\src\server\game\Tickets;D:\Kontra\Core\src\server\game\Time;D:\Kontra\Core\src\server\game\Tools;D:\Kontra\Core\src\server\game\Warden;D:\Kontra\Core\src\server\game\Warden\Modules;D:\Kontra\Core\src\server\game\Weather;D:\Kontra\Core\src\server\game\World;D:\Kontra\Core\src\server\shared;D:\Kontra\Core\src\server\shared\DataStores;D:\Kontra\Core\src\server\shared\Dynamic;D:\Kontra\Core\src\server\shared\Dynamic\LinkedReference;D:\Kontra\Core\src\server\shared\Networking;D:\Kontra\Core\src\server\shared\Packets;D:\Kontra\Core\src\server\shared\Realm;D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;D:\Kontra\Core\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Kontra/Core/src/server/worldserver/worldserver.conf.dist D:/Kontra/Build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\scripts\Release\scripts.lib;..\game\Release\game.lib;..\..\..\dep\gsoap\Release\gsoap.lib;..\shared\Release\shared.lib;..\database\Release\database.lib;..\..\common\Release\common.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_system-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_filesystem-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_thread-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_program_options-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_iostreams-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_regex-vc141-mt-1_65_1.lib;..\..\..\dep\fmt\Release\fmt.lib;..\..\..\dep\g3dlite\Release\g3dlib.lib;C:\OpenSSL-Win64\lib\VC\ssleay32MD.lib;C:\OpenSSL-Win64\lib\VC\libeay32MD.lib;C:\OpenSSL-Win64\lib\VC\libeay32MDd.lib;C:\Program Files\MySQL\MySQL Server 5.5\lib\libmysql.lib;..\..\..\dep\recastnavigation\Detour\Release\Detour.lib;..\..\..\dep\zlib\Release\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Kontra/Build/src/server/worldserver/Release/worldserver.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Kontra/Build/bin/Release/worldserver.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\worldserver;D:\Kontra\Core\src\server\worldserver\CommandLine;D:\Kontra\Core\src\server\worldserver\RemoteAccess;D:\Kontra\Core\src\server\worldserver\TCSoap;D:\Kontra\Build\src\server\worldserver;D:\Kontra\Core\src\server\scripts;D:\Kontra\Core\src\server\game;D:\Kontra\Core\src\server\game\AI;D:\Kontra\Core\src\server\game\AI\CoreAI;D:\Kontra\Core\src\server\game\AI\PlayerAI;D:\Kontra\Core\src\server\game\AI\ScriptedAI;D:\Kontra\Core\src\server\game\AI\SmartScripts;D:\Kontra\Core\src\server\game\Accounts;D:\Kontra\Core\src\server\game\Achievements;D:\Kontra\Core\src\server\game\Addons;D:\Kontra\Core\src\server\game\AuctionHouse;D:\Kontra\Core\src\server\game\AuctionHouseBot;D:\Kontra\Core\src\server\game\Battlefield;D:\Kontra\Core\src\server\game\Battlefield\Zones;D:\Kontra\Core\src\server\game\Battlegrounds;D:\Kontra\Core\src\server\game\Battlegrounds\Zones;D:\Kontra\Core\src\server\game\Cache;D:\Kontra\Core\src\server\game\Calendar;D:\Kontra\Core\src\server\game\Chat;D:\Kontra\Core\src\server\game\Chat\Channels;D:\Kontra\Core\src\server\game\Combat;D:\Kontra\Core\src\server\game\Conditions;D:\Kontra\Core\src\server\game\DataStores;D:\Kontra\Core\src\server\game\DungeonFinding;D:\Kontra\Core\src\server\game\Entities;D:\Kontra\Core\src\server\game\Entities\Corpse;D:\Kontra\Core\src\server\game\Entities\Creature;D:\Kontra\Core\src\server\game\Entities\DynamicObject;D:\Kontra\Core\src\server\game\Entities\GameObject;D:\Kontra\Core\src\server\game\Entities\Item;D:\Kontra\Core\src\server\game\Entities\Item\Container;D:\Kontra\Core\src\server\game\Entities\Object;D:\Kontra\Core\src\server\game\Entities\Object\Updates;D:\Kontra\Core\src\server\game\Entities\Pet;D:\Kontra\Core\src\server\game\Entities\Player;D:\Kontra\Core\src\server\game\Entities\Totem;D:\Kontra\Core\src\server\game\Entities\Transport;D:\Kontra\Core\src\server\game\Entities\Unit;D:\Kontra\Core\src\server\game\Entities\Vehicle;D:\Kontra\Core\src\server\game\Events;D:\Kontra\Core\src\server\game\Globals;D:\Kontra\Core\src\server\game\Grids;D:\Kontra\Core\src\server\game\Grids\Cells;D:\Kontra\Core\src\server\game\Grids\Dynamic;D:\Kontra\Core\src\server\game\Grids\Notifiers;D:\Kontra\Core\src\server\game\Groups;D:\Kontra\Core\src\server\game\Guilds;D:\Kontra\Core\src\server\game\Handlers;D:\Kontra\Core\src\server\game\Instances;D:\Kontra\Core\src\server\game\Loot;D:\Kontra\Core\src\server\game\Mails;D:\Kontra\Core\src\server\game\Maps;D:\Kontra\Core\src\server\game\Miscellaneous;D:\Kontra\Core\src\server\game\Motd;D:\Kontra\Core\src\server\game\Movement;D:\Kontra\Core\src\server\game\Movement\MovementGenerators;D:\Kontra\Core\src\server\game\Movement\Spline;D:\Kontra\Core\src\server\game\Movement\Waypoints;D:\Kontra\Core\src\server\game\OutdoorPvP;D:\Kontra\Core\src\server\game\Petitions;D:\Kontra\Core\src\server\game\Pools;D:\Kontra\Core\src\server\game\Quests;D:\Kontra\Core\src\server\game\Reputation;D:\Kontra\Core\src\server\game\Scripting;D:\Kontra\Core\src\server\game\Server;D:\Kontra\Core\src\server\game\Server\Packets;D:\Kontra\Core\src\server\game\Server\Protocol;D:\Kontra\Core\src\server\game\Skills;D:\Kontra\Core\src\server\game\Spells;D:\Kontra\Core\src\server\game\Spells\Auras;D:\Kontra\Core\src\server\game\Storages;D:\Kontra\Core\src\server\game\Texts;D:\Kontra\Core\src\server\game\Tickets;D:\Kontra\Core\src\server\game\Time;D:\Kontra\Core\src\server\game\Tools;D:\Kontra\Core\src\server\game\Warden;D:\Kontra\Core\src\server\game\Warden\Modules;D:\Kontra\Core\src\server\game\Weather;D:\Kontra\Core\src\server\game\World;D:\Kontra\Core\src\server\shared;D:\Kontra\Core\src\server\shared\DataStores;D:\Kontra\Core\src\server\shared\Dynamic;D:\Kontra\Core\src\server\shared\Dynamic\LinkedReference;D:\Kontra\Core\src\server\shared\Networking;D:\Kontra\Core\src\server\shared\Packets;D:\Kontra\Core\src\server\shared\Realm;D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;D:\Kontra\Core\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_BUILD_DIRECTIVE="$(ConfigurationName)";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\worldserver;D:\Kontra\Core\src\server\worldserver\CommandLine;D:\Kontra\Core\src\server\worldserver\RemoteAccess;D:\Kontra\Core\src\server\worldserver\TCSoap;D:\Kontra\Build\src\server\worldserver;D:\Kontra\Core\src\server\scripts;D:\Kontra\Core\src\server\game;D:\Kontra\Core\src\server\game\AI;D:\Kontra\Core\src\server\game\AI\CoreAI;D:\Kontra\Core\src\server\game\AI\PlayerAI;D:\Kontra\Core\src\server\game\AI\ScriptedAI;D:\Kontra\Core\src\server\game\AI\SmartScripts;D:\Kontra\Core\src\server\game\Accounts;D:\Kontra\Core\src\server\game\Achievements;D:\Kontra\Core\src\server\game\Addons;D:\Kontra\Core\src\server\game\AuctionHouse;D:\Kontra\Core\src\server\game\AuctionHouseBot;D:\Kontra\Core\src\server\game\Battlefield;D:\Kontra\Core\src\server\game\Battlefield\Zones;D:\Kontra\Core\src\server\game\Battlegrounds;D:\Kontra\Core\src\server\game\Battlegrounds\Zones;D:\Kontra\Core\src\server\game\Cache;D:\Kontra\Core\src\server\game\Calendar;D:\Kontra\Core\src\server\game\Chat;D:\Kontra\Core\src\server\game\Chat\Channels;D:\Kontra\Core\src\server\game\Combat;D:\Kontra\Core\src\server\game\Conditions;D:\Kontra\Core\src\server\game\DataStores;D:\Kontra\Core\src\server\game\DungeonFinding;D:\Kontra\Core\src\server\game\Entities;D:\Kontra\Core\src\server\game\Entities\Corpse;D:\Kontra\Core\src\server\game\Entities\Creature;D:\Kontra\Core\src\server\game\Entities\DynamicObject;D:\Kontra\Core\src\server\game\Entities\GameObject;D:\Kontra\Core\src\server\game\Entities\Item;D:\Kontra\Core\src\server\game\Entities\Item\Container;D:\Kontra\Core\src\server\game\Entities\Object;D:\Kontra\Core\src\server\game\Entities\Object\Updates;D:\Kontra\Core\src\server\game\Entities\Pet;D:\Kontra\Core\src\server\game\Entities\Player;D:\Kontra\Core\src\server\game\Entities\Totem;D:\Kontra\Core\src\server\game\Entities\Transport;D:\Kontra\Core\src\server\game\Entities\Unit;D:\Kontra\Core\src\server\game\Entities\Vehicle;D:\Kontra\Core\src\server\game\Events;D:\Kontra\Core\src\server\game\Globals;D:\Kontra\Core\src\server\game\Grids;D:\Kontra\Core\src\server\game\Grids\Cells;D:\Kontra\Core\src\server\game\Grids\Dynamic;D:\Kontra\Core\src\server\game\Grids\Notifiers;D:\Kontra\Core\src\server\game\Groups;D:\Kontra\Core\src\server\game\Guilds;D:\Kontra\Core\src\server\game\Handlers;D:\Kontra\Core\src\server\game\Instances;D:\Kontra\Core\src\server\game\Loot;D:\Kontra\Core\src\server\game\Mails;D:\Kontra\Core\src\server\game\Maps;D:\Kontra\Core\src\server\game\Miscellaneous;D:\Kontra\Core\src\server\game\Motd;D:\Kontra\Core\src\server\game\Movement;D:\Kontra\Core\src\server\game\Movement\MovementGenerators;D:\Kontra\Core\src\server\game\Movement\Spline;D:\Kontra\Core\src\server\game\Movement\Waypoints;D:\Kontra\Core\src\server\game\OutdoorPvP;D:\Kontra\Core\src\server\game\Petitions;D:\Kontra\Core\src\server\game\Pools;D:\Kontra\Core\src\server\game\Quests;D:\Kontra\Core\src\server\game\Reputation;D:\Kontra\Core\src\server\game\Scripting;D:\Kontra\Core\src\server\game\Server;D:\Kontra\Core\src\server\game\Server\Packets;D:\Kontra\Core\src\server\game\Server\Protocol;D:\Kontra\Core\src\server\game\Skills;D:\Kontra\Core\src\server\game\Spells;D:\Kontra\Core\src\server\game\Spells\Auras;D:\Kontra\Core\src\server\game\Storages;D:\Kontra\Core\src\server\game\Texts;D:\Kontra\Core\src\server\game\Tickets;D:\Kontra\Core\src\server\game\Time;D:\Kontra\Core\src\server\game\Tools;D:\Kontra\Core\src\server\game\Warden;D:\Kontra\Core\src\server\game\Warden\Modules;D:\Kontra\Core\src\server\game\Weather;D:\Kontra\Core\src\server\game\World;D:\Kontra\Core\src\server\shared;D:\Kontra\Core\src\server\shared\DataStores;D:\Kontra\Core\src\server\shared\Dynamic;D:\Kontra\Core\src\server\shared\Dynamic\LinkedReference;D:\Kontra\Core\src\server\shared\Networking;D:\Kontra\Core\src\server\shared\Packets;D:\Kontra\Core\src\server\shared\Realm;D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;D:\Kontra\Core\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\worldserver;D:\Kontra\Core\src\server\worldserver\CommandLine;D:\Kontra\Core\src\server\worldserver\RemoteAccess;D:\Kontra\Core\src\server\worldserver\TCSoap;D:\Kontra\Build\src\server\worldserver;D:\Kontra\Core\src\server\scripts;D:\Kontra\Core\src\server\game;D:\Kontra\Core\src\server\game\AI;D:\Kontra\Core\src\server\game\AI\CoreAI;D:\Kontra\Core\src\server\game\AI\PlayerAI;D:\Kontra\Core\src\server\game\AI\ScriptedAI;D:\Kontra\Core\src\server\game\AI\SmartScripts;D:\Kontra\Core\src\server\game\Accounts;D:\Kontra\Core\src\server\game\Achievements;D:\Kontra\Core\src\server\game\Addons;D:\Kontra\Core\src\server\game\AuctionHouse;D:\Kontra\Core\src\server\game\AuctionHouseBot;D:\Kontra\Core\src\server\game\Battlefield;D:\Kontra\Core\src\server\game\Battlefield\Zones;D:\Kontra\Core\src\server\game\Battlegrounds;D:\Kontra\Core\src\server\game\Battlegrounds\Zones;D:\Kontra\Core\src\server\game\Cache;D:\Kontra\Core\src\server\game\Calendar;D:\Kontra\Core\src\server\game\Chat;D:\Kontra\Core\src\server\game\Chat\Channels;D:\Kontra\Core\src\server\game\Combat;D:\Kontra\Core\src\server\game\Conditions;D:\Kontra\Core\src\server\game\DataStores;D:\Kontra\Core\src\server\game\DungeonFinding;D:\Kontra\Core\src\server\game\Entities;D:\Kontra\Core\src\server\game\Entities\Corpse;D:\Kontra\Core\src\server\game\Entities\Creature;D:\Kontra\Core\src\server\game\Entities\DynamicObject;D:\Kontra\Core\src\server\game\Entities\GameObject;D:\Kontra\Core\src\server\game\Entities\Item;D:\Kontra\Core\src\server\game\Entities\Item\Container;D:\Kontra\Core\src\server\game\Entities\Object;D:\Kontra\Core\src\server\game\Entities\Object\Updates;D:\Kontra\Core\src\server\game\Entities\Pet;D:\Kontra\Core\src\server\game\Entities\Player;D:\Kontra\Core\src\server\game\Entities\Totem;D:\Kontra\Core\src\server\game\Entities\Transport;D:\Kontra\Core\src\server\game\Entities\Unit;D:\Kontra\Core\src\server\game\Entities\Vehicle;D:\Kontra\Core\src\server\game\Events;D:\Kontra\Core\src\server\game\Globals;D:\Kontra\Core\src\server\game\Grids;D:\Kontra\Core\src\server\game\Grids\Cells;D:\Kontra\Core\src\server\game\Grids\Dynamic;D:\Kontra\Core\src\server\game\Grids\Notifiers;D:\Kontra\Core\src\server\game\Groups;D:\Kontra\Core\src\server\game\Guilds;D:\Kontra\Core\src\server\game\Handlers;D:\Kontra\Core\src\server\game\Instances;D:\Kontra\Core\src\server\game\Loot;D:\Kontra\Core\src\server\game\Mails;D:\Kontra\Core\src\server\game\Maps;D:\Kontra\Core\src\server\game\Miscellaneous;D:\Kontra\Core\src\server\game\Motd;D:\Kontra\Core\src\server\game\Movement;D:\Kontra\Core\src\server\game\Movement\MovementGenerators;D:\Kontra\Core\src\server\game\Movement\Spline;D:\Kontra\Core\src\server\game\Movement\Waypoints;D:\Kontra\Core\src\server\game\OutdoorPvP;D:\Kontra\Core\src\server\game\Petitions;D:\Kontra\Core\src\server\game\Pools;D:\Kontra\Core\src\server\game\Quests;D:\Kontra\Core\src\server\game\Reputation;D:\Kontra\Core\src\server\game\Scripting;D:\Kontra\Core\src\server\game\Server;D:\Kontra\Core\src\server\game\Server\Packets;D:\Kontra\Core\src\server\game\Server\Protocol;D:\Kontra\Core\src\server\game\Skills;D:\Kontra\Core\src\server\game\Spells;D:\Kontra\Core\src\server\game\Spells\Auras;D:\Kontra\Core\src\server\game\Storages;D:\Kontra\Core\src\server\game\Texts;D:\Kontra\Core\src\server\game\Tickets;D:\Kontra\Core\src\server\game\Time;D:\Kontra\Core\src\server\game\Tools;D:\Kontra\Core\src\server\game\Warden;D:\Kontra\Core\src\server\game\Warden\Modules;D:\Kontra\Core\src\server\game\Weather;D:\Kontra\Core\src\server\game\World;D:\Kontra\Core\src\server\shared;D:\Kontra\Core\src\server\shared\DataStores;D:\Kontra\Core\src\server\shared\Dynamic;D:\Kontra\Core\src\server\shared\Dynamic\LinkedReference;D:\Kontra\Core\src\server\shared\Networking;D:\Kontra\Core\src\server\shared\Packets;D:\Kontra\Core\src\server\shared\Realm;D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;D:\Kontra\Core\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Kontra/Core/src/server/worldserver/worldserver.conf.dist D:/Kontra/Build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\scripts\MinSizeRel\scripts.lib;..\game\MinSizeRel\game.lib;..\..\..\dep\gsoap\MinSizeRel\gsoap.lib;..\shared\MinSizeRel\shared.lib;..\database\MinSizeRel\database.lib;..\..\common\MinSizeRel\common.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_system-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_filesystem-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_thread-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_program_options-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_iostreams-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_regex-vc141-mt-1_65_1.lib;..\..\..\dep\fmt\MinSizeRel\fmt.lib;..\..\..\dep\g3dlite\MinSizeRel\g3dlib.lib;C:\OpenSSL-Win64\lib\VC\ssleay32MD.lib;C:\OpenSSL-Win64\lib\VC\libeay32MD.lib;C:\OpenSSL-Win64\lib\VC\libeay32MDd.lib;C:\Program Files\MySQL\MySQL Server 5.5\lib\libmysql.lib;..\..\..\dep\recastnavigation\Detour\MinSizeRel\Detour.lib;..\..\..\dep\zlib\MinSizeRel\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Kontra/Build/src/server/worldserver/MinSizeRel/worldserver.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Kontra/Build/bin/MinSizeRel/worldserver.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\worldserver;D:\Kontra\Core\src\server\worldserver\CommandLine;D:\Kontra\Core\src\server\worldserver\RemoteAccess;D:\Kontra\Core\src\server\worldserver\TCSoap;D:\Kontra\Build\src\server\worldserver;D:\Kontra\Core\src\server\scripts;D:\Kontra\Core\src\server\game;D:\Kontra\Core\src\server\game\AI;D:\Kontra\Core\src\server\game\AI\CoreAI;D:\Kontra\Core\src\server\game\AI\PlayerAI;D:\Kontra\Core\src\server\game\AI\ScriptedAI;D:\Kontra\Core\src\server\game\AI\SmartScripts;D:\Kontra\Core\src\server\game\Accounts;D:\Kontra\Core\src\server\game\Achievements;D:\Kontra\Core\src\server\game\Addons;D:\Kontra\Core\src\server\game\AuctionHouse;D:\Kontra\Core\src\server\game\AuctionHouseBot;D:\Kontra\Core\src\server\game\Battlefield;D:\Kontra\Core\src\server\game\Battlefield\Zones;D:\Kontra\Core\src\server\game\Battlegrounds;D:\Kontra\Core\src\server\game\Battlegrounds\Zones;D:\Kontra\Core\src\server\game\Cache;D:\Kontra\Core\src\server\game\Calendar;D:\Kontra\Core\src\server\game\Chat;D:\Kontra\Core\src\server\game\Chat\Channels;D:\Kontra\Core\src\server\game\Combat;D:\Kontra\Core\src\server\game\Conditions;D:\Kontra\Core\src\server\game\DataStores;D:\Kontra\Core\src\server\game\DungeonFinding;D:\Kontra\Core\src\server\game\Entities;D:\Kontra\Core\src\server\game\Entities\Corpse;D:\Kontra\Core\src\server\game\Entities\Creature;D:\Kontra\Core\src\server\game\Entities\DynamicObject;D:\Kontra\Core\src\server\game\Entities\GameObject;D:\Kontra\Core\src\server\game\Entities\Item;D:\Kontra\Core\src\server\game\Entities\Item\Container;D:\Kontra\Core\src\server\game\Entities\Object;D:\Kontra\Core\src\server\game\Entities\Object\Updates;D:\Kontra\Core\src\server\game\Entities\Pet;D:\Kontra\Core\src\server\game\Entities\Player;D:\Kontra\Core\src\server\game\Entities\Totem;D:\Kontra\Core\src\server\game\Entities\Transport;D:\Kontra\Core\src\server\game\Entities\Unit;D:\Kontra\Core\src\server\game\Entities\Vehicle;D:\Kontra\Core\src\server\game\Events;D:\Kontra\Core\src\server\game\Globals;D:\Kontra\Core\src\server\game\Grids;D:\Kontra\Core\src\server\game\Grids\Cells;D:\Kontra\Core\src\server\game\Grids\Dynamic;D:\Kontra\Core\src\server\game\Grids\Notifiers;D:\Kontra\Core\src\server\game\Groups;D:\Kontra\Core\src\server\game\Guilds;D:\Kontra\Core\src\server\game\Handlers;D:\Kontra\Core\src\server\game\Instances;D:\Kontra\Core\src\server\game\Loot;D:\Kontra\Core\src\server\game\Mails;D:\Kontra\Core\src\server\game\Maps;D:\Kontra\Core\src\server\game\Miscellaneous;D:\Kontra\Core\src\server\game\Motd;D:\Kontra\Core\src\server\game\Movement;D:\Kontra\Core\src\server\game\Movement\MovementGenerators;D:\Kontra\Core\src\server\game\Movement\Spline;D:\Kontra\Core\src\server\game\Movement\Waypoints;D:\Kontra\Core\src\server\game\OutdoorPvP;D:\Kontra\Core\src\server\game\Petitions;D:\Kontra\Core\src\server\game\Pools;D:\Kontra\Core\src\server\game\Quests;D:\Kontra\Core\src\server\game\Reputation;D:\Kontra\Core\src\server\game\Scripting;D:\Kontra\Core\src\server\game\Server;D:\Kontra\Core\src\server\game\Server\Packets;D:\Kontra\Core\src\server\game\Server\Protocol;D:\Kontra\Core\src\server\game\Skills;D:\Kontra\Core\src\server\game\Spells;D:\Kontra\Core\src\server\game\Spells\Auras;D:\Kontra\Core\src\server\game\Storages;D:\Kontra\Core\src\server\game\Texts;D:\Kontra\Core\src\server\game\Tickets;D:\Kontra\Core\src\server\game\Time;D:\Kontra\Core\src\server\game\Tools;D:\Kontra\Core\src\server\game\Warden;D:\Kontra\Core\src\server\game\Warden\Modules;D:\Kontra\Core\src\server\game\Weather;D:\Kontra\Core\src\server\game\World;D:\Kontra\Core\src\server\shared;D:\Kontra\Core\src\server\shared\DataStores;D:\Kontra\Core\src\server\shared\Dynamic;D:\Kontra\Core\src\server\shared\Dynamic\LinkedReference;D:\Kontra\Core\src\server\shared\Networking;D:\Kontra\Core\src\server\shared\Packets;D:\Kontra\Core\src\server\shared\Realm;D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;D:\Kontra\Core\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_BUILD_DIRECTIVE="$(ConfigurationName)";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\worldserver;D:\Kontra\Core\src\server\worldserver\CommandLine;D:\Kontra\Core\src\server\worldserver\RemoteAccess;D:\Kontra\Core\src\server\worldserver\TCSoap;D:\Kontra\Build\src\server\worldserver;D:\Kontra\Core\src\server\scripts;D:\Kontra\Core\src\server\game;D:\Kontra\Core\src\server\game\AI;D:\Kontra\Core\src\server\game\AI\CoreAI;D:\Kontra\Core\src\server\game\AI\PlayerAI;D:\Kontra\Core\src\server\game\AI\ScriptedAI;D:\Kontra\Core\src\server\game\AI\SmartScripts;D:\Kontra\Core\src\server\game\Accounts;D:\Kontra\Core\src\server\game\Achievements;D:\Kontra\Core\src\server\game\Addons;D:\Kontra\Core\src\server\game\AuctionHouse;D:\Kontra\Core\src\server\game\AuctionHouseBot;D:\Kontra\Core\src\server\game\Battlefield;D:\Kontra\Core\src\server\game\Battlefield\Zones;D:\Kontra\Core\src\server\game\Battlegrounds;D:\Kontra\Core\src\server\game\Battlegrounds\Zones;D:\Kontra\Core\src\server\game\Cache;D:\Kontra\Core\src\server\game\Calendar;D:\Kontra\Core\src\server\game\Chat;D:\Kontra\Core\src\server\game\Chat\Channels;D:\Kontra\Core\src\server\game\Combat;D:\Kontra\Core\src\server\game\Conditions;D:\Kontra\Core\src\server\game\DataStores;D:\Kontra\Core\src\server\game\DungeonFinding;D:\Kontra\Core\src\server\game\Entities;D:\Kontra\Core\src\server\game\Entities\Corpse;D:\Kontra\Core\src\server\game\Entities\Creature;D:\Kontra\Core\src\server\game\Entities\DynamicObject;D:\Kontra\Core\src\server\game\Entities\GameObject;D:\Kontra\Core\src\server\game\Entities\Item;D:\Kontra\Core\src\server\game\Entities\Item\Container;D:\Kontra\Core\src\server\game\Entities\Object;D:\Kontra\Core\src\server\game\Entities\Object\Updates;D:\Kontra\Core\src\server\game\Entities\Pet;D:\Kontra\Core\src\server\game\Entities\Player;D:\Kontra\Core\src\server\game\Entities\Totem;D:\Kontra\Core\src\server\game\Entities\Transport;D:\Kontra\Core\src\server\game\Entities\Unit;D:\Kontra\Core\src\server\game\Entities\Vehicle;D:\Kontra\Core\src\server\game\Events;D:\Kontra\Core\src\server\game\Globals;D:\Kontra\Core\src\server\game\Grids;D:\Kontra\Core\src\server\game\Grids\Cells;D:\Kontra\Core\src\server\game\Grids\Dynamic;D:\Kontra\Core\src\server\game\Grids\Notifiers;D:\Kontra\Core\src\server\game\Groups;D:\Kontra\Core\src\server\game\Guilds;D:\Kontra\Core\src\server\game\Handlers;D:\Kontra\Core\src\server\game\Instances;D:\Kontra\Core\src\server\game\Loot;D:\Kontra\Core\src\server\game\Mails;D:\Kontra\Core\src\server\game\Maps;D:\Kontra\Core\src\server\game\Miscellaneous;D:\Kontra\Core\src\server\game\Motd;D:\Kontra\Core\src\server\game\Movement;D:\Kontra\Core\src\server\game\Movement\MovementGenerators;D:\Kontra\Core\src\server\game\Movement\Spline;D:\Kontra\Core\src\server\game\Movement\Waypoints;D:\Kontra\Core\src\server\game\OutdoorPvP;D:\Kontra\Core\src\server\game\Petitions;D:\Kontra\Core\src\server\game\Pools;D:\Kontra\Core\src\server\game\Quests;D:\Kontra\Core\src\server\game\Reputation;D:\Kontra\Core\src\server\game\Scripting;D:\Kontra\Core\src\server\game\Server;D:\Kontra\Core\src\server\game\Server\Packets;D:\Kontra\Core\src\server\game\Server\Protocol;D:\Kontra\Core\src\server\game\Skills;D:\Kontra\Core\src\server\game\Spells;D:\Kontra\Core\src\server\game\Spells\Auras;D:\Kontra\Core\src\server\game\Storages;D:\Kontra\Core\src\server\game\Texts;D:\Kontra\Core\src\server\game\Tickets;D:\Kontra\Core\src\server\game\Time;D:\Kontra\Core\src\server\game\Tools;D:\Kontra\Core\src\server\game\Warden;D:\Kontra\Core\src\server\game\Warden\Modules;D:\Kontra\Core\src\server\game\Weather;D:\Kontra\Core\src\server\game\World;D:\Kontra\Core\src\server\shared;D:\Kontra\Core\src\server\shared\DataStores;D:\Kontra\Core\src\server\shared\Dynamic;D:\Kontra\Core\src\server\shared\Dynamic\LinkedReference;D:\Kontra\Core\src\server\shared\Networking;D:\Kontra\Core\src\server\shared\Packets;D:\Kontra\Core\src\server\shared\Realm;D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;D:\Kontra\Core\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\worldserver;D:\Kontra\Core\src\server\worldserver\CommandLine;D:\Kontra\Core\src\server\worldserver\RemoteAccess;D:\Kontra\Core\src\server\worldserver\TCSoap;D:\Kontra\Build\src\server\worldserver;D:\Kontra\Core\src\server\scripts;D:\Kontra\Core\src\server\game;D:\Kontra\Core\src\server\game\AI;D:\Kontra\Core\src\server\game\AI\CoreAI;D:\Kontra\Core\src\server\game\AI\PlayerAI;D:\Kontra\Core\src\server\game\AI\ScriptedAI;D:\Kontra\Core\src\server\game\AI\SmartScripts;D:\Kontra\Core\src\server\game\Accounts;D:\Kontra\Core\src\server\game\Achievements;D:\Kontra\Core\src\server\game\Addons;D:\Kontra\Core\src\server\game\AuctionHouse;D:\Kontra\Core\src\server\game\AuctionHouseBot;D:\Kontra\Core\src\server\game\Battlefield;D:\Kontra\Core\src\server\game\Battlefield\Zones;D:\Kontra\Core\src\server\game\Battlegrounds;D:\Kontra\Core\src\server\game\Battlegrounds\Zones;D:\Kontra\Core\src\server\game\Cache;D:\Kontra\Core\src\server\game\Calendar;D:\Kontra\Core\src\server\game\Chat;D:\Kontra\Core\src\server\game\Chat\Channels;D:\Kontra\Core\src\server\game\Combat;D:\Kontra\Core\src\server\game\Conditions;D:\Kontra\Core\src\server\game\DataStores;D:\Kontra\Core\src\server\game\DungeonFinding;D:\Kontra\Core\src\server\game\Entities;D:\Kontra\Core\src\server\game\Entities\Corpse;D:\Kontra\Core\src\server\game\Entities\Creature;D:\Kontra\Core\src\server\game\Entities\DynamicObject;D:\Kontra\Core\src\server\game\Entities\GameObject;D:\Kontra\Core\src\server\game\Entities\Item;D:\Kontra\Core\src\server\game\Entities\Item\Container;D:\Kontra\Core\src\server\game\Entities\Object;D:\Kontra\Core\src\server\game\Entities\Object\Updates;D:\Kontra\Core\src\server\game\Entities\Pet;D:\Kontra\Core\src\server\game\Entities\Player;D:\Kontra\Core\src\server\game\Entities\Totem;D:\Kontra\Core\src\server\game\Entities\Transport;D:\Kontra\Core\src\server\game\Entities\Unit;D:\Kontra\Core\src\server\game\Entities\Vehicle;D:\Kontra\Core\src\server\game\Events;D:\Kontra\Core\src\server\game\Globals;D:\Kontra\Core\src\server\game\Grids;D:\Kontra\Core\src\server\game\Grids\Cells;D:\Kontra\Core\src\server\game\Grids\Dynamic;D:\Kontra\Core\src\server\game\Grids\Notifiers;D:\Kontra\Core\src\server\game\Groups;D:\Kontra\Core\src\server\game\Guilds;D:\Kontra\Core\src\server\game\Handlers;D:\Kontra\Core\src\server\game\Instances;D:\Kontra\Core\src\server\game\Loot;D:\Kontra\Core\src\server\game\Mails;D:\Kontra\Core\src\server\game\Maps;D:\Kontra\Core\src\server\game\Miscellaneous;D:\Kontra\Core\src\server\game\Motd;D:\Kontra\Core\src\server\game\Movement;D:\Kontra\Core\src\server\game\Movement\MovementGenerators;D:\Kontra\Core\src\server\game\Movement\Spline;D:\Kontra\Core\src\server\game\Movement\Waypoints;D:\Kontra\Core\src\server\game\OutdoorPvP;D:\Kontra\Core\src\server\game\Petitions;D:\Kontra\Core\src\server\game\Pools;D:\Kontra\Core\src\server\game\Quests;D:\Kontra\Core\src\server\game\Reputation;D:\Kontra\Core\src\server\game\Scripting;D:\Kontra\Core\src\server\game\Server;D:\Kontra\Core\src\server\game\Server\Packets;D:\Kontra\Core\src\server\game\Server\Protocol;D:\Kontra\Core\src\server\game\Skills;D:\Kontra\Core\src\server\game\Spells;D:\Kontra\Core\src\server\game\Spells\Auras;D:\Kontra\Core\src\server\game\Storages;D:\Kontra\Core\src\server\game\Texts;D:\Kontra\Core\src\server\game\Tickets;D:\Kontra\Core\src\server\game\Time;D:\Kontra\Core\src\server\game\Tools;D:\Kontra\Core\src\server\game\Warden;D:\Kontra\Core\src\server\game\Warden\Modules;D:\Kontra\Core\src\server\game\Weather;D:\Kontra\Core\src\server\game\World;D:\Kontra\Core\src\server\shared;D:\Kontra\Core\src\server\shared\DataStores;D:\Kontra\Core\src\server\shared\Dynamic;D:\Kontra\Core\src\server\shared\Dynamic\LinkedReference;D:\Kontra\Core\src\server\shared\Networking;D:\Kontra\Core\src\server\shared\Packets;D:\Kontra\Core\src\server\shared\Realm;D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;D:\Kontra\Core\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Kontra/Core/src/server/worldserver/worldserver.conf.dist D:/Kontra/Build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\scripts\RelWithDebInfo\scripts.lib;..\game\RelWithDebInfo\game.lib;..\..\..\dep\gsoap\RelWithDebInfo\gsoap.lib;..\shared\RelWithDebInfo\shared.lib;..\database\RelWithDebInfo\database.lib;..\..\common\RelWithDebInfo\common.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_system-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_filesystem-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_thread-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_program_options-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_iostreams-vc141-mt-1_65_1.lib;C:\local\boost_1_65_1\lib64-msvc-14.1\libboost_regex-vc141-mt-1_65_1.lib;..\..\..\dep\fmt\RelWithDebInfo\fmt.lib;..\..\..\dep\g3dlite\RelWithDebInfo\g3dlib.lib;C:\OpenSSL-Win64\lib\VC\ssleay32MD.lib;C:\OpenSSL-Win64\lib\VC\libeay32MD.lib;C:\OpenSSL-Win64\lib\VC\libeay32MDd.lib;C:\Program Files\MySQL\MySQL Server 5.5\lib\libmysql.lib;..\..\..\dep\recastnavigation\Detour\RelWithDebInfo\Detour.lib;..\..\..\dep\zlib\RelWithDebInfo\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Kontra/Build/src/server/worldserver/RelWithDebInfo/worldserver.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Kontra/Build/bin/RelWithDebInfo/worldserver.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Kontra\Core\src\server\worldserver\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Kontra/Core/src/server/worldserver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Kontra/Core -BD:/Kontra/Build --check-stamp-file D:/Kontra/Build/src/server/worldserver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Kontra/Core/src/server/worldserver/CMakeLists.txt;D:\Kontra\Core\src\server\worldserver\CMakeLists.txt;D:\Kontra\Core\src\server\worldserver\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Kontra/Core/src/server/worldserver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Kontra/Core -BD:/Kontra/Build --check-stamp-file D:/Kontra/Build/src/server/worldserver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Kontra/Core/src/server/worldserver/CMakeLists.txt;D:\Kontra\Core\src\server\worldserver\CMakeLists.txt;D:\Kontra\Core\src\server\worldserver\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Kontra/Core/src/server/worldserver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Kontra/Core -BD:/Kontra/Build --check-stamp-file D:/Kontra/Build/src/server/worldserver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Kontra/Core/src/server/worldserver/CMakeLists.txt;D:\Kontra\Core\src\server\worldserver\CMakeLists.txt;D:\Kontra\Core\src\server\worldserver\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Kontra/Core/src/server/worldserver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Kontra/Core -BD:/Kontra/Build --check-stamp-file D:/Kontra/Build/src/server/worldserver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Kontra/Core/src/server/worldserver/CMakeLists.txt;D:\Kontra\Core\src\server\worldserver\CMakeLists.txt;D:\Kontra\Core\src\server\worldserver\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Kontra\Build\CMakeFiles\ad7159bce8181e039890bfa2cb29fc72\worldserver_CXX_prefix.hxx.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating CXX prefix header D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Kontra\Build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCOTIRE_BUILD_TYPE:STRING=Debug -P D:/Kontra/Core/dep/cotire/CMake/cotire.cmake combine D:/Kontra/Build/src/server/worldserver/worldserver_CXX_cotire.cmake D:/Kontra/Build/src/server/worldserver/$(Configuration)/cotire/worldserver_CXX_prefix.hxx D:/Kontra/Core/src/server/worldserver/PrecompiledHeaders/worldPCH.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Kontra/Build/CMakeFiles/ad7159bce8181e039890bfa2cb29fc72/worldserver_CXX_prefix.hxx.rule;D:\Kontra\Core\src\server\worldserver\PrecompiledHeaders\worldPCH.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating CXX prefix header D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Kontra\Build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCOTIRE_BUILD_TYPE:STRING=Release -P D:/Kontra/Core/dep/cotire/CMake/cotire.cmake combine D:/Kontra/Build/src/server/worldserver/worldserver_CXX_cotire.cmake D:/Kontra/Build/src/server/worldserver/$(Configuration)/cotire/worldserver_CXX_prefix.hxx D:/Kontra/Core/src/server/worldserver/PrecompiledHeaders/worldPCH.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Kontra/Build/CMakeFiles/ad7159bce8181e039890bfa2cb29fc72/worldserver_CXX_prefix.hxx.rule;D:\Kontra\Core\src\server\worldserver\PrecompiledHeaders\worldPCH.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating CXX prefix header D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Kontra\Build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCOTIRE_BUILD_TYPE:STRING=MinSizeRel -P D:/Kontra/Core/dep/cotire/CMake/cotire.cmake combine D:/Kontra/Build/src/server/worldserver/worldserver_CXX_cotire.cmake D:/Kontra/Build/src/server/worldserver/$(Configuration)/cotire/worldserver_CXX_prefix.hxx D:/Kontra/Core/src/server/worldserver/PrecompiledHeaders/worldPCH.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Kontra/Build/CMakeFiles/ad7159bce8181e039890bfa2cb29fc72/worldserver_CXX_prefix.hxx.rule;D:\Kontra\Core\src\server\worldserver\PrecompiledHeaders\worldPCH.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating CXX prefix header D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Kontra\Build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCOTIRE_BUILD_TYPE:STRING=RelWithDebInfo -P D:/Kontra/Core/dep/cotire/CMake/cotire.cmake combine D:/Kontra/Build/src/server/worldserver/worldserver_CXX_cotire.cmake D:/Kontra/Build/src/server/worldserver/$(Configuration)/cotire/worldserver_CXX_prefix.hxx D:/Kontra/Core/src/server/worldserver/PrecompiledHeaders/worldPCH.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Kontra/Build/CMakeFiles/ad7159bce8181e039890bfa2cb29fc72/worldserver_CXX_prefix.hxx.rule;D:\Kontra\Core\src\server\worldserver\PrecompiledHeaders\worldPCH.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Kontra\Core\src\server\worldserver\Main.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="D:\Kontra\Core\src\server\worldserver\resource.h" />
+    <ClCompile Include="D:\Kontra\Core\src\server\worldserver\CommandLine\CliRunnable.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="D:\Kontra\Core\src\server\worldserver\CommandLine\CliRunnable.h" />
+    <ClCompile Include="D:\Kontra\Core\src\server\worldserver\RemoteAccess\RASession.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="D:\Kontra\Core\src\server\worldserver\RemoteAccess\RASession.h" />
+    <ClCompile Include="D:\Kontra\Core\src\server\worldserver\TCSoap\TCSoap.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="D:\Kontra\Core\src\server\worldserver\TCSoap\TCSoap.h" />
+    <ClCompile Include="D:\Kontra\Core\src\common\Debugging\WheatyExceptionReport.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="D:\Kontra\Core\src\common\Debugging\WheatyExceptionReport.h" />
+    <ClCompile Include="D:\Kontra\Core\src\common\Platform\ServiceWin32.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\worldserver\$(Configuration)\cotire\worldserver_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="D:\Kontra\Core\src\common\Platform\ServiceWin32.h" />
+    <ResourceCompile Include="D:\Kontra\Core\src\server\worldserver\worldserver.rc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Kontra\Build\ZERO_CHECK.vcxproj">
+      <Project>{D3A8838B-5B0F-37EC-B9FB-8CEC6AF60191}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\recastnavigation\Detour\Detour.vcxproj">
+      <Project>{9BCA680A-B35C-38CB-AB03-C4229E5D07B9}</Project>
+      <Name>Detour</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\src\common\common.vcxproj">
+      <Project>{803FC11D-4FF3-3BAD-8391-6FA9353BFC08}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\src\server\database\database.vcxproj">
+      <Project>{654FBDD2-510B-3984-A804-F7A1819BB62F}</Project>
+      <Name>database</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\fmt\fmt.vcxproj">
+      <Project>{44067C8F-3643-3875-9D76-E1E923ACA463}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\g3dlite\g3dlib.vcxproj">
+      <Project>{5371134B-CE35-3F9E-B299-2F96D9458193}</Project>
+      <Name>g3dlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\src\server\game\game.vcxproj">
+      <Project>{3B08B9B5-AEAD-3FFB-AD96-59C11E7EF477}</Project>
+      <Name>game</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\gsoap\gsoap.vcxproj">
+      <Project>{723F64CA-D2F2-3A96-92B2-AE4B69373419}</Project>
+      <Name>gsoap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\src\server\scripts\scripts.vcxproj">
+      <Project>{438C0800-9B64-3401-B1DE-579C99471AE0}</Project>
+      <Name>scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\src\server\shared\shared.vcxproj">
+      <Project>{B482C06C-C461-36A8-B951-C1B3A18388BA}</Project>
+      <Name>shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\zlib\zlib.vcxproj">
+      <Project>{BB7B1019-7F73-332C-BE95-199597D2B3A1}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

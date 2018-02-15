@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Kontra\Core\dep\recastnavigation\Recast\Source\Recast.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\dep\recastnavigation\Recast\Source\RecastAlloc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\dep\recastnavigation\Recast\Source\RecastAssert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\dep\recastnavigation\Recast\Source\RecastArea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\dep\recastnavigation\Recast\Source\RecastContour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\dep\recastnavigation\Recast\Source\RecastFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\dep\recastnavigation\Recast\Source\RecastLayers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\dep\recastnavigation\Recast\Source\RecastMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\dep\recastnavigation\Recast\Source\RecastMeshDetail.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\dep\recastnavigation\Recast\Source\RecastRasterization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\dep\recastnavigation\Recast\Source\RecastRegion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Kontra\Core\dep\recastnavigation\Recast\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{152D214B-0D93-3EDB-BAE4-FC6650295A45}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

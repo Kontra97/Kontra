@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\AdhocStatement.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\DatabaseEnv.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\DatabaseLoader.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\DatabaseWorker.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\DatabaseWorkerPool.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\Field.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\MySQLConnection.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\MySQLThreading.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\PreparedStatement.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\QueryCallback.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\QueryCallbackProcessor.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\QueryHolder.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\QueryResult.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\Transaction.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\Implementation\CharacterDatabase.cpp">
+      <Filter>Database\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\Implementation\LoginDatabase.cpp">
+      <Filter>Database\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\Implementation\WorldDatabase.cpp">
+      <Filter>Database\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Logging\AppenderDB.cpp">
+      <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Updater\DBUpdater.cpp">
+      <Filter>Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Updater\UpdateFetcher.cpp">
+      <Filter>Updater</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\AdhocStatement.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\DatabaseEnv.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\DatabaseEnvFwd.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\DatabaseLoader.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\DatabaseWorker.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\DatabaseWorkerPool.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\Field.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\MySQLConnection.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\MySQLThreading.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\PreparedStatement.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\QueryCallback.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\QueryCallbackProcessor.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\QueryHolder.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\QueryResult.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\SQLOperation.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\Transaction.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\Implementation\CharacterDatabase.h">
+      <Filter>Database\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\Implementation\LoginDatabase.h">
+      <Filter>Database\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\Implementation\WorldDatabase.h">
+      <Filter>Database\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Logging\AppenderDB.h">
+      <Filter>Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Updater\DBUpdater.h">
+      <Filter>Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Updater\UpdateFetcher.h">
+      <Filter>Updater</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Kontra\Core\src\server\database\CMakeLists.txt" />
+    <CustomBuild Include="D:\Kontra\Build\CMakeFiles\2cef0d8d814dab7ef2a277856abf58d9\database_CXX_prefix.hxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B5B2270A-F6AB-3AF2-8611-DE695E306A11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database">
+      <UniqueIdentifier>{ADDB7F5F-0FF0-324E-B1C7-4B724AADE2DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logging">
+      <UniqueIdentifier>{4546DAC1-5108-3B3B-82F1-993C0BADE7B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Updater">
+      <UniqueIdentifier>{8B0562B3-5D8D-35B6-A02E-37A1217B23B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Implementation">
+      <UniqueIdentifier>{D24E7ABC-C238-3B38-A06F-338BDE223C1F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

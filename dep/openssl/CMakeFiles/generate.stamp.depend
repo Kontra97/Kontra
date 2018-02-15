@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+D:/Kontra/Core/dep/openssl/CMakeLists.txt
+D:/Kontra/Core/cmake/macros/FindOpenSSL.cmake
+D:/Kontra/Core/cmake/macros/EnsureVersion.cmake

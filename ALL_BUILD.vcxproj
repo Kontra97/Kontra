@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FE2AED6B-00B7-341F-9378-6D834C1819F8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Kontra\Core\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Kontra/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Kontra/Core -BD:/Kontra/Build --check-stamp-file D:/Kontra/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Kontra/Core/CMakeLists.txt;D:\Kontra\Core\CMakeLists.txt;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFiles.cmake;D:\Kontra\Core\cmake\macros\ConfigureScripts.cmake;D:\Kontra\Core\cmake\options.cmake;D:\Kontra\Core\cmake\macros\ConfigureBaseTargets.cmake;D:\Kontra\Core\cmake\macros\CheckPlatform.cmake;D:\Kontra\Core\cmake\platform\win\settings.cmake;D:\Kontra\Core\cmake\compiler\msvc\settings.cmake;D:\Kontra\Core\cmake\macros\GroupSources.cmake;D:\Kontra\Core\cmake\macros\AutoCollect.cmake;D:\Kontra\Core\cmake\macros\FindPCHSupport.cmake;D:\Kontra\Core\dep\cotire\CMake\cotire.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\ProcessorCount.cmake;D:\Kontra\Core\cmake\macros\FindMySQL.cmake;D:\Kontra\Core\cmake\macros\FindGit.cmake;D:\Kontra\Core\cmake\macros\EnsureVersion.cmake;D:\Kontra\Core\cmake\genrev.cmake;D:\Kontra\Core\cmake\showoptions.cmake;D:\Kontra\Core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Kontra/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Kontra/Core -BD:/Kontra/Build --check-stamp-file D:/Kontra/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Kontra/Core/CMakeLists.txt;D:\Kontra\Core\CMakeLists.txt;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFiles.cmake;D:\Kontra\Core\cmake\macros\ConfigureScripts.cmake;D:\Kontra\Core\cmake\options.cmake;D:\Kontra\Core\cmake\macros\ConfigureBaseTargets.cmake;D:\Kontra\Core\cmake\macros\CheckPlatform.cmake;D:\Kontra\Core\cmake\platform\win\settings.cmake;D:\Kontra\Core\cmake\compiler\msvc\settings.cmake;D:\Kontra\Core\cmake\macros\GroupSources.cmake;D:\Kontra\Core\cmake\macros\AutoCollect.cmake;D:\Kontra\Core\cmake\macros\FindPCHSupport.cmake;D:\Kontra\Core\dep\cotire\CMake\cotire.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\ProcessorCount.cmake;D:\Kontra\Core\cmake\macros\FindMySQL.cmake;D:\Kontra\Core\cmake\macros\FindGit.cmake;D:\Kontra\Core\cmake\macros\EnsureVersion.cmake;D:\Kontra\Core\cmake\genrev.cmake;D:\Kontra\Core\cmake\showoptions.cmake;D:\Kontra\Core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Kontra/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Kontra/Core -BD:/Kontra/Build --check-stamp-file D:/Kontra/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Kontra/Core/CMakeLists.txt;D:\Kontra\Core\CMakeLists.txt;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFiles.cmake;D:\Kontra\Core\cmake\macros\ConfigureScripts.cmake;D:\Kontra\Core\cmake\options.cmake;D:\Kontra\Core\cmake\macros\ConfigureBaseTargets.cmake;D:\Kontra\Core\cmake\macros\CheckPlatform.cmake;D:\Kontra\Core\cmake\platform\win\settings.cmake;D:\Kontra\Core\cmake\compiler\msvc\settings.cmake;D:\Kontra\Core\cmake\macros\GroupSources.cmake;D:\Kontra\Core\cmake\macros\AutoCollect.cmake;D:\Kontra\Core\cmake\macros\FindPCHSupport.cmake;D:\Kontra\Core\dep\cotire\CMake\cotire.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\ProcessorCount.cmake;D:\Kontra\Core\cmake\macros\FindMySQL.cmake;D:\Kontra\Core\cmake\macros\FindGit.cmake;D:\Kontra\Core\cmake\macros\EnsureVersion.cmake;D:\Kontra\Core\cmake\genrev.cmake;D:\Kontra\Core\cmake\showoptions.cmake;D:\Kontra\Core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Kontra/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Kontra/Core -BD:/Kontra/Build --check-stamp-file D:/Kontra/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Kontra/Core/CMakeLists.txt;D:\Kontra\Core\CMakeLists.txt;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;D:\Kontra\Build\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFiles.cmake;D:\Kontra\Core\cmake\macros\ConfigureScripts.cmake;D:\Kontra\Core\cmake\options.cmake;D:\Kontra\Core\cmake\macros\ConfigureBaseTargets.cmake;D:\Kontra\Core\cmake\macros\CheckPlatform.cmake;D:\Kontra\Core\cmake\platform\win\settings.cmake;D:\Kontra\Core\cmake\compiler\msvc\settings.cmake;D:\Kontra\Core\cmake\macros\GroupSources.cmake;D:\Kontra\Core\cmake\macros\AutoCollect.cmake;D:\Kontra\Core\cmake\macros\FindPCHSupport.cmake;D:\Kontra\Core\dep\cotire\CMake\cotire.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\ProcessorCount.cmake;D:\Kontra\Core\cmake\macros\FindMySQL.cmake;D:\Kontra\Core\cmake\macros\FindGit.cmake;D:\Kontra\Core\cmake\macros\EnsureVersion.cmake;D:\Kontra\Core\cmake\genrev.cmake;D:\Kontra\Core\cmake\showoptions.cmake;D:\Kontra\Core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Kontra\Build\ZERO_CHECK.vcxproj">
+      <Project>{D3A8838B-5B0F-37EC-B9FB-8CEC6AF60191}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\recastnavigation\Detour\Detour.vcxproj">
+      <Project>{9BCA680A-B35C-38CB-AB03-C4229E5D07B9}</Project>
+      <Name>Detour</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\recastnavigation\Recast\Recast.vcxproj">
+      <Project>{8C9A706F-A535-38FC-AE8D-51BC4124DFC2}</Project>
+      <Name>Recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\src\server\authserver\authserver.vcxproj">
+      <Project>{97A9A308-6835-356B-97F4-78968FEE5212}</Project>
+      <Name>authserver</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\src\common\common.vcxproj">
+      <Project>{803FC11D-4FF3-3BAD-8391-6FA9353BFC08}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\src\server\database\database.vcxproj">
+      <Project>{654FBDD2-510B-3984-A804-F7A1819BB62F}</Project>
+      <Name>database</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\fmt\fmt.vcxproj">
+      <Project>{44067C8F-3643-3875-9D76-E1E923ACA463}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\g3dlite\g3dlib.vcxproj">
+      <Project>{5371134B-CE35-3F9E-B299-2F96D9458193}</Project>
+      <Name>g3dlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\src\server\game\game.vcxproj">
+      <Project>{3B08B9B5-AEAD-3FFB-AD96-59C11E7EF477}</Project>
+      <Name>game</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\gsoap\gsoap.vcxproj">
+      <Project>{723F64CA-D2F2-3A96-92B2-AE4B69373419}</Project>
+      <Name>gsoap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\src\genrev\revision_data.h.vcxproj">
+      <Project>{DA1231BF-A102-3438-8D30-FE5E9A40C861}</Project>
+      <Name>revision_data.h</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\src\server\scripts\scripts.vcxproj">
+      <Project>{438C0800-9B64-3401-B1DE-579C99471AE0}</Project>
+      <Name>scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\src\server\shared\shared.vcxproj">
+      <Project>{B482C06C-C461-36A8-B951-C1B3A18388BA}</Project>
+      <Name>shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\src\server\worldserver\worldserver.vcxproj">
+      <Project>{2E386E11-B5F2-35D8-966F-18C7BB735672}</Project>
+      <Name>worldserver</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\zlib\zlib.vcxproj">
+      <Project>{BB7B1019-7F73-332C-BE95-199597D2B3A1}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

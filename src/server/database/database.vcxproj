@@ -1,0 +1,846 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{654FBDD2-510B-3984-A804-F7A1819BB62F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>database</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">database.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">database</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">database.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">database</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">database.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">database</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">database.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">database</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build\src\server\database;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;TRINITY_API_EXPORT_DATABASE;_WIN64;_BUILD_DIRECTIVE="$(ConfigurationName)";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;TRINITY_API_EXPORT_DATABASE;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build\src\server\database;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build\src\server\database;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build\src\server\database;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;TRINITY_API_EXPORT_DATABASE;_WIN64;_BUILD_DIRECTIVE="$(ConfigurationName)";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;TRINITY_API_EXPORT_DATABASE;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build\src\server\database;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build\src\server\database;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build\src\server\database;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;TRINITY_API_EXPORT_DATABASE;_WIN64;_BUILD_DIRECTIVE="$(ConfigurationName)";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;TRINITY_API_EXPORT_DATABASE;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build\src\server\database;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build\src\server\database;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build\src\server\database;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;TRINITY_API_EXPORT_DATABASE;_WIN64;_BUILD_DIRECTIVE="$(ConfigurationName)";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;TRINITY_API_EXPORT_DATABASE;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_OPTIONAL_USE_OLD_DEFINITION_OF_NONE;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;BOOST_ASIO_NO_DEPRECATED;TC_HAS_BROKEN_WSTRING_REGEX;FMT_USE_OVERRIDE;FMT_USE_VARIADIC_TEMPLATES;FMT_USE_RVALUE_REFERENCES;FMT_USE_DELETED_FUNCTIONS;FMT_USE_EXTERN_TEMPLATES;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build\src\server\database;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Kontra\Core\src\server\database;D:\Kontra\Core\src\server\database\Database;D:\Kontra\Core\src\server\database\Database\Implementation;D:\Kontra\Core\src\server\database\Logging;D:\Kontra\Core\src\server\database\Updater;D:\Kontra\Build\src\server\database;D:\Kontra\Build;D:\Kontra\Core\src\common;D:\Kontra\Core\src\common\Asio;D:\Kontra\Core\src\common\Collision;D:\Kontra\Core\src\common\Collision\Management;D:\Kontra\Core\src\common\Collision\Maps;D:\Kontra\Core\src\common\Collision\Models;D:\Kontra\Core\src\common\Configuration;D:\Kontra\Core\src\common\Cryptography;D:\Kontra\Core\src\common\Cryptography\Authentication;D:\Kontra\Core\src\common\DataStores;D:\Kontra\Core\src\common\Debugging;D:\Kontra\Core\src\common\Logging;D:\Kontra\Core\src\common\Metric;D:\Kontra\Core\src\common\Platform;D:\Kontra\Core\src\common\Threading;D:\Kontra\Core\src\common\Utilities;C:\local\boost_1_65_1;D:\Kontra\Core\dep\fmt;D:\Kontra\Core\dep\g3dlite\include;D:\Kontra\Core\dep\zlib;D:\Kontra\Core\dep\recastnavigation\Detour\Include;D:\Kontra\Core\dep\SFMT;D:\Kontra\Core\dep\utf8cpp;C:\OpenSSL-Win64\include;D:\Kontra\Core\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Kontra\Core\src\server\database\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Kontra/Core/src/server/database/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Kontra/Core -BD:/Kontra/Build --check-stamp-file D:/Kontra/Build/src/server/database/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Kontra/Core/src/server/database/CMakeLists.txt;D:\Kontra\Core\src\server\database\CMakeLists.txt;D:\Kontra\Core\src\server\database\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Kontra/Core/src/server/database/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Kontra/Core -BD:/Kontra/Build --check-stamp-file D:/Kontra/Build/src/server/database/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Kontra/Core/src/server/database/CMakeLists.txt;D:\Kontra\Core\src\server\database\CMakeLists.txt;D:\Kontra\Core\src\server\database\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Kontra/Core/src/server/database/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Kontra/Core -BD:/Kontra/Build --check-stamp-file D:/Kontra/Build/src/server/database/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Kontra/Core/src/server/database/CMakeLists.txt;D:\Kontra\Core\src\server\database\CMakeLists.txt;D:\Kontra\Core\src\server\database\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Kontra/Core/src/server/database/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Kontra/Core -BD:/Kontra/Build --check-stamp-file D:/Kontra/Build/src/server/database/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Kontra/Core/src/server/database/CMakeLists.txt;D:\Kontra\Core\src\server\database\CMakeLists.txt;D:\Kontra\Core\src\server\database\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Kontra\Build\CMakeFiles\2cef0d8d814dab7ef2a277856abf58d9\database_CXX_prefix.hxx.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating CXX prefix header D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Kontra\Build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCOTIRE_BUILD_TYPE:STRING=Debug -P D:/Kontra/Core/dep/cotire/CMake/cotire.cmake combine D:/Kontra/Build/src/server/database/database_CXX_cotire.cmake D:/Kontra/Build/src/server/database/$(Configuration)/cotire/database_CXX_prefix.hxx D:/Kontra/Core/src/server/database/PrecompiledHeaders/databasePCH.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Kontra/Build/CMakeFiles/2cef0d8d814dab7ef2a277856abf58d9/database_CXX_prefix.hxx.rule;D:\Kontra\Core\src\server\database\PrecompiledHeaders\databasePCH.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating CXX prefix header D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Kontra\Build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCOTIRE_BUILD_TYPE:STRING=Release -P D:/Kontra/Core/dep/cotire/CMake/cotire.cmake combine D:/Kontra/Build/src/server/database/database_CXX_cotire.cmake D:/Kontra/Build/src/server/database/$(Configuration)/cotire/database_CXX_prefix.hxx D:/Kontra/Core/src/server/database/PrecompiledHeaders/databasePCH.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Kontra/Build/CMakeFiles/2cef0d8d814dab7ef2a277856abf58d9/database_CXX_prefix.hxx.rule;D:\Kontra\Core\src\server\database\PrecompiledHeaders\databasePCH.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating CXX prefix header D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Kontra\Build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCOTIRE_BUILD_TYPE:STRING=MinSizeRel -P D:/Kontra/Core/dep/cotire/CMake/cotire.cmake combine D:/Kontra/Build/src/server/database/database_CXX_cotire.cmake D:/Kontra/Build/src/server/database/$(Configuration)/cotire/database_CXX_prefix.hxx D:/Kontra/Core/src/server/database/PrecompiledHeaders/databasePCH.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Kontra/Build/CMakeFiles/2cef0d8d814dab7ef2a277856abf58d9/database_CXX_prefix.hxx.rule;D:\Kontra\Core\src\server\database\PrecompiledHeaders\databasePCH.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating CXX prefix header D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Kontra\Build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCOTIRE_BUILD_TYPE:STRING=RelWithDebInfo -P D:/Kontra/Core/dep/cotire/CMake/cotire.cmake combine D:/Kontra/Build/src/server/database/database_CXX_cotire.cmake D:/Kontra/Build/src/server/database/$(Configuration)/cotire/database_CXX_prefix.hxx D:/Kontra/Core/src/server/database/PrecompiledHeaders/databasePCH.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Kontra/Build/CMakeFiles/2cef0d8d814dab7ef2a277856abf58d9/database_CXX_prefix.hxx.rule;D:\Kontra\Core\src\server\database\PrecompiledHeaders\databasePCH.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\AdhocStatement.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\DatabaseEnv.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\DatabaseLoader.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\DatabaseWorker.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\DatabaseWorkerPool.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\Field.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\MySQLConnection.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\MySQLThreading.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\PreparedStatement.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\QueryCallback.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\QueryCallbackProcessor.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\QueryHolder.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\QueryResult.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\Transaction.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\AdhocStatement.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\DatabaseEnv.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\DatabaseEnvFwd.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\DatabaseLoader.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\DatabaseWorker.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\DatabaseWorkerPool.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\Field.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\MySQLConnection.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\MySQLThreading.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\PreparedStatement.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\QueryCallback.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\QueryCallbackProcessor.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\QueryHolder.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\QueryResult.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\SQLOperation.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\Transaction.h" />
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\Implementation\CharacterDatabase.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\Implementation\LoginDatabase.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Database\Implementation\WorldDatabase.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\Implementation\CharacterDatabase.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\Implementation\LoginDatabase.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Database\Implementation\WorldDatabase.h" />
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Logging\AppenderDB.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Logging\AppenderDB.h" />
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Updater\DBUpdater.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\database\Updater\UpdateFetcher.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /Zm500</AdditionalOptions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Kontra\Build\src\server\database\$(Configuration)\cotire\database_CXX_prefix.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Updater\DBUpdater.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\database\Updater\UpdateFetcher.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Kontra\Build\ZERO_CHECK.vcxproj">
+      <Project>{D3A8838B-5B0F-37EC-B9FB-8CEC6AF60191}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\recastnavigation\Detour\Detour.vcxproj">
+      <Project>{9BCA680A-B35C-38CB-AB03-C4229E5D07B9}</Project>
+      <Name>Detour</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\src\common\common.vcxproj">
+      <Project>{803FC11D-4FF3-3BAD-8391-6FA9353BFC08}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\fmt\fmt.vcxproj">
+      <Project>{44067C8F-3643-3875-9D76-E1E923ACA463}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\g3dlite\g3dlib.vcxproj">
+      <Project>{5371134B-CE35-3F9E-B299-2F96D9458193}</Project>
+      <Name>g3dlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Kontra\Build\dep\zlib\zlib.vcxproj">
+      <Project>{BB7B1019-7F73-332C-BE95-199597D2B3A1}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Kontra\Core\src\server\authserver\Main.cpp" />
+    <ClCompile Include="D:\Kontra\Core\src\server\authserver\Authentication\AuthCodes.cpp">
+      <Filter>Authentication</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\authserver\Authentication\TOTP.cpp">
+      <Filter>Authentication</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\server\authserver\Server\AuthSession.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\common\Debugging\WheatyExceptionReport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Kontra\Core\src\common\Platform\ServiceWin32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Kontra\Core\src\server\authserver\resource.h" />
+    <ClInclude Include="D:\Kontra\Core\src\server\authserver\Authentication\AuthCodes.h">
+      <Filter>Authentication</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\authserver\Authentication\TOTP.h">
+      <Filter>Authentication</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\authserver\Server\AuthSession.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\server\authserver\Server\AuthSocketMgr.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\common\Debugging\WheatyExceptionReport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Kontra\Core\src\common\Platform\ServiceWin32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Kontra\Core\src\server\authserver\CMakeLists.txt" />
+    <CustomBuild Include="D:\Kontra\Build\CMakeFiles\13e363f2d0fcc8201c6c0ab46be5cd45\authserver_CXX_prefix.hxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\Kontra\Core\src\server\authserver\authserver.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{152D214B-0D93-3EDB-BAE4-FC6650295A45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4B9E6E0B-3FF7-36D3-8960-19ECC20DD5FD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B5B2270A-F6AB-3AF2-8611-DE695E306A11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authentication">
+      <UniqueIdentifier>{965003C8-FB2E-3A80-80DD-9E4315FF198D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{AA622ED3-A50F-37D3-947E-DBC9CEA4BFF7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
