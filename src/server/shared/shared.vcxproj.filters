@@ -75,6 +75,9 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Dynamic\LinkedReference">
+      <UniqueIdentifier>{640193DF-2D6B-35D1-8934-7CA7D4CF70BB}</UniqueIdentifier>
+    </Filter>
     <Filter Include="CMake Rules">
       <UniqueIdentifier>{B5B2270A-F6AB-3AF2-8611-DE695E306A11}</UniqueIdentifier>
     </Filter>
@@ -92,9 +95,6 @@
     </Filter>
     <Filter Include="Realm">
       <UniqueIdentifier>{D344DB74-EE26-3D55-BF9B-C86A41FA6F33}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Dynamic\LinkedReference">
-      <UniqueIdentifier>{640193DF-2D6B-35D1-8934-7CA7D4CF70BB}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

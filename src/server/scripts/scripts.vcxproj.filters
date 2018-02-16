@@ -2106,15 +2106,6 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Northrend\FrozenHalls\ForgeOfSouls">
-      <UniqueIdentifier>{156450EA-23CA-3A84-AFF5-467283AA04C0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Northrend\FrozenHalls\HallsOfReflection">
-      <UniqueIdentifier>{E70A8E92-4407-33D3-8011-47BE603DF415}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Northrend\FrozenHalls\PitOfSaron">
-      <UniqueIdentifier>{C5CA6B25-4808-39E3-BDC4-5D7FC5A9FC0F}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Northrend\Nexus\EyeOfEternity">
       <UniqueIdentifier>{0C72D32F-2E67-3B7A-AAEC-7F6EE914BA84}</UniqueIdentifier>
     </Filter>
@@ -2124,14 +2115,128 @@
     <Filter Include="Northrend\Nexus\Oculus">
       <UniqueIdentifier>{F3541883-34AC-3F40-845C-6C4E0931E047}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Northrend\Ulduar\HallsOfLightning">
-      <UniqueIdentifier>{91B5A1BA-33A3-364C-9278-96375203511F}</UniqueIdentifier>
+    <Filter Include="Northrend\FrozenHalls\ForgeOfSouls">
+      <UniqueIdentifier>{156450EA-23CA-3A84-AFF5-467283AA04C0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Northrend\Ulduar\HallsOfStone">
-      <UniqueIdentifier>{197B726A-FAB9-3F03-9CB4-9FB3B15C4729}</UniqueIdentifier>
+    <Filter Include="Northrend\FrozenHalls\HallsOfReflection">
+      <UniqueIdentifier>{E70A8E92-4407-33D3-8011-47BE603DF415}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Northrend\Ulduar\Ulduar">
-      <UniqueIdentifier>{EB322E89-8F0F-3856-9F3F-79E340AE3773}</UniqueIdentifier>
+    <Filter Include="Northrend\FrozenHalls\PitOfSaron">
+      <UniqueIdentifier>{C5CA6B25-4808-39E3-BDC4-5D7FC5A9FC0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EasternKingdoms\BlackrockMountain\BlackrockDepths">
+      <UniqueIdentifier>{F7B970D4-4A96-3172-80D1-CA2C6B089052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EasternKingdoms\BlackrockMountain\BlackrockSpire">
+      <UniqueIdentifier>{46011C86-3EB4-36B1-AAE9-E8E751262D32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EasternKingdoms\BlackrockMountain\BlackwingLair">
+      <UniqueIdentifier>{204CFA21-A1AB-33D5-A8D8-5EBA00A3678E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EasternKingdoms\BlackrockMountain\MoltenCore">
+      <UniqueIdentifier>{ECABCF77-C1D0-3482-B92C-69D585868705}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\Auchindoun\AuchenaiCrypts">
+      <UniqueIdentifier>{7434C559-8F7B-3446-A41B-06600C925253}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\Auchindoun\ManaTombs">
+      <UniqueIdentifier>{903EC0A6-CDA8-3C91-89FD-491A146E7290}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\Auchindoun\SethekkHalls">
+      <UniqueIdentifier>{809E7358-7716-372A-8502-95B4090090D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\Auchindoun\ShadowLabyrinth">
+      <UniqueIdentifier>{1050F14A-62C9-3D16-8557-1EFBFEEB4B5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\CoilfangReservoir\SerpentShrine">
+      <UniqueIdentifier>{6F3C120F-DEE2-3992-8380-708E32062D9F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\CoilfangReservoir\SteamVault">
+      <UniqueIdentifier>{CD31D673-9B26-3995-BDD2-681666CD0B53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\CoilfangReservoir\TheSlavePens">
+      <UniqueIdentifier>{E1536C1D-8151-3BAE-B13B-08C355CA0AE2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\CoilfangReservoir\TheUnderbog">
+      <UniqueIdentifier>{8DBBC52A-1B16-3F36-A0E0-FC925CD15B4B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kalimdor\CavernsOfTime\BattleForMountHyjal">
+      <UniqueIdentifier>{65224349-7247-38B9-BDC9-60211EBCFAFD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kalimdor\CavernsOfTime\CullingOfStratholme">
+      <UniqueIdentifier>{55D955F7-328F-3535-AD3B-502A6D3F0A54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kalimdor\CavernsOfTime\EscapeFromDurnholdeKeep">
+      <UniqueIdentifier>{951D0C60-E33B-35EB-B5BC-88019D9245F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kalimdor\CavernsOfTime\TheBlackMorass">
+      <UniqueIdentifier>{41093824-5597-3779-9AFE-5899BB608D31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Northrend\ChamberOfAspects\ObsidianSanctum">
+      <UniqueIdentifier>{C968FC71-F08B-3E9F-B53B-228F54AD5909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Northrend\ChamberOfAspects\RubySanctum">
+      <UniqueIdentifier>{3D2F9506-63A2-3B46-8723-260D032BE43C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Northrend\AzjolNerub\Ahnkahet">
+      <UniqueIdentifier>{486A652C-B377-3389-A3EA-BA66F2C97B21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Northrend\AzjolNerub\AzjolNerub">
+      <UniqueIdentifier>{47057852-8AE7-3B27-93E0-89C38355D90E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Northrend\UtgardeKeep\UtgardeKeep">
+      <UniqueIdentifier>{D0DDD53C-449B-3141-A4CE-B5000A84E8DC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Northrend\UtgardeKeep\UtgardePinnacle">
+      <UniqueIdentifier>{866A3EB6-4CFD-35A6-83F8-2F2801C06B4F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Northrend\CrusadersColiseum\TrialOfTheChampion">
+      <UniqueIdentifier>{AD6BFE27-D713-3F67-9E86-9DC7B5CEEEFF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Northrend\CrusadersColiseum\TrialOfTheCrusader">
+      <UniqueIdentifier>{6BB0D8AD-BF71-3DFA-89ED-DD402182D648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\TempestKeep\Eye">
+      <UniqueIdentifier>{1A20F7CA-1FCC-3BF7-B369-27AB57E9E641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\TempestKeep\Mechanar">
+      <UniqueIdentifier>{5318E4AD-65DD-3758-8462-5ECAA2C195FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\TempestKeep\arcatraz">
+      <UniqueIdentifier>{6B191D9B-423A-38EB-8A00-46BAB773D9EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\TempestKeep\botanica">
+      <UniqueIdentifier>{E6EE1659-87AD-3F53-9C01-7A0947609C45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\HellfireCitadel\BloodFurnace">
+      <UniqueIdentifier>{AC6CB018-9658-3F87-B856-8EBC7A2B3C10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\HellfireCitadel\HellfireRamparts">
+      <UniqueIdentifier>{191739D7-71C0-390E-8E89-C84B323A1164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\HellfireCitadel\MagtheridonsLair">
+      <UniqueIdentifier>{F5D6279C-56CE-34DF-9DF5-15E3BDCD0256}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\HellfireCitadel\ShatteredHalls">
+      <UniqueIdentifier>{D6903FD7-DFCB-3980-92EA-8AC334ED0A5C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\Auchindoun">
+      <UniqueIdentifier>{067D912E-0B6F-3B15-B3AB-B0595A4E9332}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\BlackTemple">
+      <UniqueIdentifier>{EA4D31B9-0E6D-322C-BA72-B721F69433CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\CoilfangReservoir">
+      <UniqueIdentifier>{07ED420A-D234-37CC-BFB6-03367B5DD913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\GruulsLair">
+      <UniqueIdentifier>{2A415C7B-7CCC-3190-8D00-F3EC1F387DD2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\HellfireCitadel">
+      <UniqueIdentifier>{099AF4D8-8116-378B-B1F1-69371BDA879D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outland\TempestKeep">
+      <UniqueIdentifier>{A8FFEA36-1AF7-3F1A-B58F-66BB6C630CE9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Kalimdor\BlackfathomDeeps">
       <UniqueIdentifier>{CAA3746A-4FA3-3291-A94A-263A5835F474}</UniqueIdentifier>
@@ -2168,24 +2273,6 @@
     </Filter>
     <Filter Include="Kalimdor\RagefireChasm">
       <UniqueIdentifier>{7E1FF6F6-6ACC-313C-B753-078C7F636C11}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\Auchindoun">
-      <UniqueIdentifier>{067D912E-0B6F-3B15-B3AB-B0595A4E9332}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\BlackTemple">
-      <UniqueIdentifier>{EA4D31B9-0E6D-322C-BA72-B721F69433CD}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\CoilfangReservoir">
-      <UniqueIdentifier>{07ED420A-D234-37CC-BFB6-03367B5DD913}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\GruulsLair">
-      <UniqueIdentifier>{2A415C7B-7CCC-3190-8D00-F3EC1F387DD2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\HellfireCitadel">
-      <UniqueIdentifier>{099AF4D8-8116-378B-B1F1-69371BDA879D}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\TempestKeep">
-      <UniqueIdentifier>{A8FFEA36-1AF7-3F1A-B58F-66BB6C630CE9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Northrend\AzjolNerub">
       <UniqueIdentifier>{F400D76A-274B-3FA5-92A6-9E33A6DC4C6B}</UniqueIdentifier>
@@ -2229,101 +2316,14 @@
     <Filter Include="Northrend\IsleOfConquest">
       <UniqueIdentifier>{BC143B8A-E594-3DE2-B5CA-919BE1BCDBFA}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Northrend\AzjolNerub\Ahnkahet">
-      <UniqueIdentifier>{486A652C-B377-3389-A3EA-BA66F2C97B21}</UniqueIdentifier>
+    <Filter Include="Northrend\Ulduar\HallsOfLightning">
+      <UniqueIdentifier>{91B5A1BA-33A3-364C-9278-96375203511F}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Northrend\AzjolNerub\AzjolNerub">
-      <UniqueIdentifier>{47057852-8AE7-3B27-93E0-89C38355D90E}</UniqueIdentifier>
+    <Filter Include="Northrend\Ulduar\HallsOfStone">
+      <UniqueIdentifier>{197B726A-FAB9-3F03-9CB4-9FB3B15C4729}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Northrend\ChamberOfAspects\ObsidianSanctum">
-      <UniqueIdentifier>{C968FC71-F08B-3E9F-B53B-228F54AD5909}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Northrend\ChamberOfAspects\RubySanctum">
-      <UniqueIdentifier>{3D2F9506-63A2-3B46-8723-260D032BE43C}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Northrend\CrusadersColiseum\TrialOfTheChampion">
-      <UniqueIdentifier>{AD6BFE27-D713-3F67-9E86-9DC7B5CEEEFF}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Northrend\CrusadersColiseum\TrialOfTheCrusader">
-      <UniqueIdentifier>{6BB0D8AD-BF71-3DFA-89ED-DD402182D648}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Northrend\UtgardeKeep\UtgardeKeep">
-      <UniqueIdentifier>{D0DDD53C-449B-3141-A4CE-B5000A84E8DC}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Northrend\UtgardeKeep\UtgardePinnacle">
-      <UniqueIdentifier>{866A3EB6-4CFD-35A6-83F8-2F2801C06B4F}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Kalimdor\CavernsOfTime\BattleForMountHyjal">
-      <UniqueIdentifier>{65224349-7247-38B9-BDC9-60211EBCFAFD}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Kalimdor\CavernsOfTime\CullingOfStratholme">
-      <UniqueIdentifier>{55D955F7-328F-3535-AD3B-502A6D3F0A54}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Kalimdor\CavernsOfTime\EscapeFromDurnholdeKeep">
-      <UniqueIdentifier>{951D0C60-E33B-35EB-B5BC-88019D9245F5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Kalimdor\CavernsOfTime\TheBlackMorass">
-      <UniqueIdentifier>{41093824-5597-3779-9AFE-5899BB608D31}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="EasternKingdoms\BlackrockMountain\BlackrockDepths">
-      <UniqueIdentifier>{F7B970D4-4A96-3172-80D1-CA2C6B089052}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="EasternKingdoms\BlackrockMountain\BlackrockSpire">
-      <UniqueIdentifier>{46011C86-3EB4-36B1-AAE9-E8E751262D32}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="EasternKingdoms\BlackrockMountain\BlackwingLair">
-      <UniqueIdentifier>{204CFA21-A1AB-33D5-A8D8-5EBA00A3678E}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="EasternKingdoms\BlackrockMountain\MoltenCore">
-      <UniqueIdentifier>{ECABCF77-C1D0-3482-B92C-69D585868705}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\Auchindoun\AuchenaiCrypts">
-      <UniqueIdentifier>{7434C559-8F7B-3446-A41B-06600C925253}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\Auchindoun\ManaTombs">
-      <UniqueIdentifier>{903EC0A6-CDA8-3C91-89FD-491A146E7290}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\Auchindoun\SethekkHalls">
-      <UniqueIdentifier>{809E7358-7716-372A-8502-95B4090090D7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\Auchindoun\ShadowLabyrinth">
-      <UniqueIdentifier>{1050F14A-62C9-3D16-8557-1EFBFEEB4B5B}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\CoilfangReservoir\SerpentShrine">
-      <UniqueIdentifier>{6F3C120F-DEE2-3992-8380-708E32062D9F}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\CoilfangReservoir\SteamVault">
-      <UniqueIdentifier>{CD31D673-9B26-3995-BDD2-681666CD0B53}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\CoilfangReservoir\TheSlavePens">
-      <UniqueIdentifier>{E1536C1D-8151-3BAE-B13B-08C355CA0AE2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\CoilfangReservoir\TheUnderbog">
-      <UniqueIdentifier>{8DBBC52A-1B16-3F36-A0E0-FC925CD15B4B}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\HellfireCitadel\BloodFurnace">
-      <UniqueIdentifier>{AC6CB018-9658-3F87-B856-8EBC7A2B3C10}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\HellfireCitadel\HellfireRamparts">
-      <UniqueIdentifier>{191739D7-71C0-390E-8E89-C84B323A1164}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\HellfireCitadel\MagtheridonsLair">
-      <UniqueIdentifier>{F5D6279C-56CE-34DF-9DF5-15E3BDCD0256}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\HellfireCitadel\ShatteredHalls">
-      <UniqueIdentifier>{D6903FD7-DFCB-3980-92EA-8AC334ED0A5C}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\TempestKeep\Eye">
-      <UniqueIdentifier>{1A20F7CA-1FCC-3BF7-B369-27AB57E9E641}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\TempestKeep\Mechanar">
-      <UniqueIdentifier>{5318E4AD-65DD-3758-8462-5ECAA2C195FA}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\TempestKeep\arcatraz">
-      <UniqueIdentifier>{6B191D9B-423A-38EB-8A00-46BAB773D9EE}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Outland\TempestKeep\botanica">
-      <UniqueIdentifier>{E6EE1659-87AD-3F53-9C01-7A0947609C45}</UniqueIdentifier>
+    <Filter Include="Northrend\Ulduar\Ulduar">
+      <UniqueIdentifier>{EB322E89-8F0F-3856-9F3F-79E340AE3773}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{152D214B-0D93-3EDB-BAE4-FC6650295A45}</UniqueIdentifier>

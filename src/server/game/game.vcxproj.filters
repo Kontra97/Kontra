@@ -1394,6 +1394,15 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Movement\MovementGenerators">
+      <UniqueIdentifier>{B8044060-62B2-3189-9EB0-B5D0F41FEEC0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Movement\Spline">
+      <UniqueIdentifier>{D7D759B6-AA95-31CD-BD79-DA247EEA6587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Movement\Waypoints">
+      <UniqueIdentifier>{3D8EC61A-47FF-3C5A-BEDA-580A1675DECF}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Grids\Cells">
       <UniqueIdentifier>{E5412DD2-430B-337B-9553-DEF0878FE8E8}</UniqueIdentifier>
     </Filter>
@@ -1403,14 +1412,23 @@
     <Filter Include="Grids\Notifiers">
       <UniqueIdentifier>{777E891D-1329-3169-A276-A9CB20CCCD73}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Movement\MovementGenerators">
-      <UniqueIdentifier>{B8044060-62B2-3189-9EB0-B5D0F41FEEC0}</UniqueIdentifier>
+    <Filter Include="AI\CoreAI">
+      <UniqueIdentifier>{9B6BDEC3-8FE8-33E3-93A9-92AA3798D0F3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Movement\Spline">
-      <UniqueIdentifier>{D7D759B6-AA95-31CD-BD79-DA247EEA6587}</UniqueIdentifier>
+    <Filter Include="AI\PlayerAI">
+      <UniqueIdentifier>{6338CF9D-F3E1-35FC-9731-4191A4F5714E}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Movement\Waypoints">
-      <UniqueIdentifier>{3D8EC61A-47FF-3C5A-BEDA-580A1675DECF}</UniqueIdentifier>
+    <Filter Include="AI\ScriptedAI">
+      <UniqueIdentifier>{5D31117C-00E8-34F1-B8E0-0175B43FB06B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI\SmartScripts">
+      <UniqueIdentifier>{4A7275D7-DA43-3EE2-A3A5-09438E58375E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Packets">
+      <UniqueIdentifier>{A6DB2422-5DE9-36B5-B215-39D381CCFFE8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Protocol">
+      <UniqueIdentifier>{D079B4EA-1B26-34EC-A949-F95275D9C2D8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Entities\Corpse">
       <UniqueIdentifier>{A977EE04-893C-3CC6-B21E-C1E3AEEDE0BC}</UniqueIdentifier>
@@ -1448,23 +1466,26 @@
     <Filter Include="Entities\Vehicle">
       <UniqueIdentifier>{BC9E0A34-FFF8-38A8-9D2C-E23833CBFFD0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Server\Packets">
-      <UniqueIdentifier>{A6DB2422-5DE9-36B5-B215-39D381CCFFE8}</UniqueIdentifier>
+    <Filter Include="Entities\Item\Container">
+      <UniqueIdentifier>{2989F8CF-F64E-32A4-85C4-EB9F127782B2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Server\Protocol">
-      <UniqueIdentifier>{D079B4EA-1B26-34EC-A949-F95275D9C2D8}</UniqueIdentifier>
+    <Filter Include="Battlefield\Zones">
+      <UniqueIdentifier>{4B800A2D-9FE7-391D-8A57-4B45D6305361}</UniqueIdentifier>
     </Filter>
-    <Filter Include="AI\CoreAI">
-      <UniqueIdentifier>{9B6BDEC3-8FE8-33E3-93A9-92AA3798D0F3}</UniqueIdentifier>
+    <Filter Include="Entities\Object\Updates">
+      <UniqueIdentifier>{7DB01821-30C3-399A-9A46-4C5F5A37984B}</UniqueIdentifier>
     </Filter>
-    <Filter Include="AI\PlayerAI">
-      <UniqueIdentifier>{6338CF9D-F3E1-35FC-9731-4191A4F5714E}</UniqueIdentifier>
+    <Filter Include="Spells\Auras">
+      <UniqueIdentifier>{2CF89ECC-8C8E-359C-9FE0-D6075AFF8BA3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="AI\ScriptedAI">
-      <UniqueIdentifier>{5D31117C-00E8-34F1-B8E0-0175B43FB06B}</UniqueIdentifier>
+    <Filter Include="Warden\Modules">
+      <UniqueIdentifier>{E4FFF20E-83A9-3B82-85D0-025EF212FA0F}</UniqueIdentifier>
     </Filter>
-    <Filter Include="AI\SmartScripts">
-      <UniqueIdentifier>{4A7275D7-DA43-3EE2-A3A5-09438E58375E}</UniqueIdentifier>
+    <Filter Include="Battlegrounds\Zones">
+      <UniqueIdentifier>{E86E1F5B-34D1-3A64-B05B-7C7BC3C1A48E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chat\Channels">
+      <UniqueIdentifier>{4F40887F-7AB1-376F-B246-C85A094A6873}</UniqueIdentifier>
     </Filter>
     <Filter Include="CMake Rules">
       <UniqueIdentifier>{B5B2270A-F6AB-3AF2-8611-DE695E306A11}</UniqueIdentifier>
@@ -1606,27 +1627,6 @@
     </Filter>
     <Filter Include="World">
       <UniqueIdentifier>{84D5FBC6-FFB2-32D9-8C52-95EF82A0028F}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Warden\Modules">
-      <UniqueIdentifier>{E4FFF20E-83A9-3B82-85D0-025EF212FA0F}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Spells\Auras">
-      <UniqueIdentifier>{2CF89ECC-8C8E-359C-9FE0-D6075AFF8BA3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Entities\Object\Updates">
-      <UniqueIdentifier>{7DB01821-30C3-399A-9A46-4C5F5A37984B}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Chat\Channels">
-      <UniqueIdentifier>{4F40887F-7AB1-376F-B246-C85A094A6873}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Battlegrounds\Zones">
-      <UniqueIdentifier>{E86E1F5B-34D1-3A64-B05B-7C7BC3C1A48E}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Entities\Item\Container">
-      <UniqueIdentifier>{2989F8CF-F64E-32A4-85C4-EB9F127782B2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Battlefield\Zones">
-      <UniqueIdentifier>{4B800A2D-9FE7-391D-8A57-4B45D6305361}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
